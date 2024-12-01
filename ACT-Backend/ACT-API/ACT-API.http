@@ -1,0 +1,6 @@
+@ACT_API_HostAddress = http://localhost:5015
+
+GET {{ACT_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,17 @@
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.Business.deps.json
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.Business.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.Business.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.DataAccess.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.Entity.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.DataAccess.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\bin\Debug\net8.0\ACT.Entity.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.csproj.AssemblyReference.cache
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.AssemblyInfoInputs.cache
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.AssemblyInfo.cs
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.csproj.CoreCompileInputs.cache
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Busi.FDDE03F4.Up2Date
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\refint\ACT.Business.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ACT.Business.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Business\obj\Debug\net8.0\ref\ACT.Business.dll

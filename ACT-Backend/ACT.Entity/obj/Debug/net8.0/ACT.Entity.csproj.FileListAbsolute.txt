@@ -1,0 +1,11 @@
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\bin\Debug\net8.0\ACT.Entity.deps.json
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\bin\Debug\net8.0\ACT.Entity.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\bin\Debug\net8.0\ACT.Entity.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.AssemblyInfoInputs.cache
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.AssemblyInfo.cs
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.csproj.CoreCompileInputs.cache
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\refint\ACT.Entity.dll
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ACT.Entity.pdb
+C:\Users\eskoc\source\repos\ACT-Backend\ACT.Entity\obj\Debug\net8.0\ref\ACT.Entity.dll
