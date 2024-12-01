@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ACT_API;
-
-public partial class ActReservationStatus
+namespace ACT.Entity.Models
 {
-    public int ReservationStatusId { get; set; }
+    public partial class ActReservationStatus
+    {
+        public int ReservationStatusId { get; set; }
 
-    public string StatusName { get; set; } = null!;
+        public string StatusName { get; set; } = null!;
 
-    public virtual ICollection<ActReservation> ActReservations { get; set; } = new List<ActReservation>();
+        public virtual ICollection<ActReservation> ActReservations { get; set; } = new List<ActReservation>();
+    }
 }
+
+

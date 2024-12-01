@@ -3,8 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iregisterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iregisterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\registerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\iregisterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.entity\\models\\actuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|solutionrelative:act.entity\\models\\actuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.entity\\models\\actcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|solutionrelative:act.entity\\models\\actcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +106,316 @@
       "DocumentGroups": [
         {
           "DockedWidth": 160,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRegisterService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IRegisterService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\IRegisterService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IRegisterService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\IRegisterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:22:51.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\RegisterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:54:19.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Program.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Program.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Program.cs",
+              "RelativeToolTip": "ACT-API\\Program.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T07:17:39.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:25:17.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\RegisterRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\RegisterRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\RegisterRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\RegisterRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:20:59.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRegisterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IRegisterRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\IRegisterRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IRegisterRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\IRegisterRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:20:44.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\RegisterService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\RegisterService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\RegisterService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\RegisterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:23:41.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\UserDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\UserDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\UserDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T07:08:31.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\LoginRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\LoginRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\LoginRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:21:49.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:26:08.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\ILoginService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\ILoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:23:07.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\LoginService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\LoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:23:27.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\ILoginRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:21:35.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:31:27.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:08:52.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\TokenService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\TokenService.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAewGAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T08:43:11.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\appsettings.json",
+              "RelativeDocumentMoniker": "ACT-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\appsettings.json",
+              "RelativeToolTip": "ACT-API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T07:25:03.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ActUser.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActUser.cs",
+              "RelativeDocumentMoniker": "ACT.Entity\\Models\\ActUser.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActUser.cs",
+              "RelativeToolTip": "ACT.Entity\\Models\\ActUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:30:41.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ActCampaign.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActCampaign.cs",
+              "RelativeDocumentMoniker": "ACT.Entity\\Models\\ActCampaign.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActCampaign.cs",
+              "RelativeToolTip": "ACT.Entity\\Models\\ActCampaign.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T07:03:23.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:50:17.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:28:10.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:19:20.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\UserService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T06:16:51.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ACT.DataAccess\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\AppDbContext.cs",
               "RelativeToolTip": "ACT.DataAccess\\AppDbContext.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAUwJIAAAAiAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAxwCkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T05:48:25.984Z",
               "EditorCaption": ""
