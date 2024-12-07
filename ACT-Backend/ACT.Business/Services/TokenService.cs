@@ -25,7 +25,30 @@ namespace ACT.Business.Services
         private readonly int _expirationMinutes;
 
         private static readonly ConcurrentDictionary<string, DateTime> InvalidTokens = new ConcurrentDictionary<string, DateTime>();
-       
+
+        // Token temizleme mekanizması
+        static TokenService()
+        {
+            Task.Run(async () =>
+            {
+                while (true)
+                {
+                    await Task.Delay(TimeSpan.FromHours(1)); // Her 1 saatte bir
+                    var expiredTokens = InvalidTokens
+                        .Where(t => t.Value.AddHours(6) < DateTime.UtcNow) // 6 saatten eski token'ları seç
+                        .Select(t => t.Key).ToList();
+
+                    foreach (var token in expiredTokens)
+                    {
+                        InvalidTokens.TryRemove(token, out _); // Geçersiz token'ı listeden kaldır
+                    }
+                }
+            });
+        }
+
+
+
+
         public TokenService(IConfiguration configuration, AppDbContext context)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
@@ -79,48 +102,32 @@ namespace ACT.Business.Services
             }
         }
 
-        //token geçersiz kılmak amacıyla
+        // Reset Token ile kullanıcıyı bulma
         public async Task<ActUser> GetUserByResetTokenAsync(string token)
         {
             try
             {
                 var tokenHandler = new JwtSecurityTokenHandler();
-                if (string.IsNullOrEmpty(_secretKey))
-                {
-                    throw new InvalidOperationException("Secret key is not configured.");
-                }
-
                 var key = Encoding.ASCII.GetBytes(_secretKey);
 
-                if (tokenHandler.ReadToken(token) is JwtSecurityToken jwtToken)
-                {
-                    if (jwtToken.ValidTo <= DateTime.UtcNow)
-                    {
-                        throw new SecurityTokenExpiredException("Token has expired.");
-                    }
+                if (!(tokenHandler.ReadToken(token) is JwtSecurityToken jwtToken))
+                    throw new SecurityTokenException("Invalid token format.");
 
-                    var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-                    if (string.IsNullOrEmpty(userId))
-                    {
-                        throw new InvalidOperationException("Invalid token claims.");
-                    }
+                if (jwtToken.ValidTo <= DateTime.UtcNow)
+                    throw new SecurityTokenExpiredException("Token has expired.");
 
-                    var user = await _context.ActUsers
-                        .FirstOrDefaultAsync(u => u.UserId.ToString() == userId);
+                var userId = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                if (string.IsNullOrEmpty(userId))
+                    throw new SecurityTokenException("Invalid token claims.");
 
-                    return user ?? throw new InvalidOperationException("User not found or token is invalid.");
-                }
-                else
-                {
-                    throw new InvalidOperationException("Invalid token.");
-                }
+                var user = await _context.ActUsers.FirstOrDefaultAsync(u => u.UserId.ToString() == userId);
+                return user ?? throw new InvalidOperationException("User not found.");
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Failed to retrieve user by reset token.", ex);
+                throw new InvalidOperationException("Error while processing the reset token.", ex);
             }
         }
-
 
         public static Task RevokeTokenAsync(string token)
         {

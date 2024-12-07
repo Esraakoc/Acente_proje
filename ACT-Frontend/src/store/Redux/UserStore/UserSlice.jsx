@@ -1,24 +1,23 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
- userInfo: [
-  {
-    name: "furkan",
-    surname: "sahin",
-    phone: "5356230534",
-    mail: "asdasd@gmail.com"
-  }
- ],
-}
+  user: null, // Kullanıcı bilgisi başlangıçta boş
+  
+};
 
-export const UserSlice = createSlice({
+export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-   
+    setUser: (state, action) => {
+      state.user = action.payload; // Kullanıcıyı günceller
+    },
+    clearUser: (state) => {
+      state.user = null; // Kullanıcıyı temizler
+    },
   },
-})
+});
 
-export const {  } = UserSlice.actions
+export const { setUser, clearUser } = userSlice.actions;
 
-export default UserSlice.reducer
+export default userSlice.reducer;

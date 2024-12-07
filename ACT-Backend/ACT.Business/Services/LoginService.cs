@@ -21,15 +21,23 @@ namespace ACT.Business.Services
         {
             if (string.IsNullOrEmpty(loginDto.UserId) || string.IsNullOrEmpty(loginDto.Password))
             {
-                return null;
+                throw new ArgumentException("User ID and Password cannot be empty.");
             }
 
             var user = await _loginRepository.GetUserByIdAsync(loginDto.UserId);
-            if (user != null && BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
+            if (user == null)
             {
-                return user;
+                throw new UnauthorizedAccessException("User not found.");
             }
-            return null;
+
+            // Şifreyi doğrula
+            if (!BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
+            {
+                throw new UnauthorizedAccessException("Invalid password.");
+            }
+
+            // Giriş başarılı, kullanıcıyı döndür
+            return user;
         }
     }
 }
