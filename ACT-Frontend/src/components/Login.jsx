@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
-import { Button, TextField, Typography, Snackbar, Alert } from "@mui/material";
+import { TextField, Typography, Button, Snackbar, Alert, Card, CardContent } from "@mui/material";
+import airplaneIcon from "../images/airplane.png";
+import ticketIcon from "../images/ticket-flight.png";
+import travelIcon from "../images/travel-bag.png";
 import "../styles/login.css";
 import { loginUserAction } from "../store/Redux/UserStore/UserAction";
 
@@ -36,41 +38,55 @@ const Login = () => {
   };
 
   return (
-    <div className="loginDiv">
-      <div className="login-form-div">
-        <form className="login-form" onSubmit={handleSubmit}>
-          <Typography variant="h5">User Login</Typography>
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            label="User ID"
-            name="userId"
-            value={userId}
-            onChange={(e) => setUserId(e.target.value)}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            label="Password"
-            name="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <Button
-            type="submit"
-            className="login-form-btn"
-            variant="contained"
-            color="primary"
-          >
-            Sign in
-          </Button>
-        </form>
+    <div className="login-container">
+      <div className="login-card">
+        <Card  className="login-CardContent" style={{position:"relative"}}>
+          <CardContent >
+            <Typography variant="h5" align="center" gutterBottom>
+              Kullanıcı Girişi
+            </Typography>
+            <form onSubmit={handleSubmit}>
+              <TextField
+                fullWidth
+                label="Kullanıcı Adı"
+                variant="outlined"
+                margin="normal"
+                required
+                value={userId}
+                onChange={(e) => setUserId(e.target.value)}
+              />
+              <TextField
+                fullWidth
+                label="Şifre"
+                type="password"
+                variant="outlined"
+                margin="normal"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <Typography variant="body2"  className="forgot-password">
+                <a href="/password-reset-request">Şifremi Unuttum</a>
+              </Typography>
+              <Button
+                fullWidth
+                type="submit"
+                variant="contained"
+                color="primary"
+                className="login-button"
+              >
+                Giriş Yap
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
       </div>
+      <img src={airplaneIcon} alt="Airplane" className="planeicon-image" />
+      <div className="login-icons">
+        <img src={ticketIcon} alt="Ticket" className="icon-image" />
+        <img src={travelIcon} alt="Travel Bag" className="icon-image" />
+      </div>
+
 
       <Snackbar
         open={openSnackbar}

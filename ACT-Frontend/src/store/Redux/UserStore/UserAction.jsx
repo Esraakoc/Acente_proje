@@ -1,14 +1,16 @@
+
 import { LoginUser, GetUserInfo, LogoutUser } from "./UserCrud";
 import { setUser, clearUser } from "./UserSlice";
 
 // Kullanıcı Giriş Yapma Aksiyonu
 export const loginUserAction = (userData) => async (dispatch) => {
+
   try {
     const response = await LoginUser(userData);
 
     // Gelen Token'ı localStorage'a kaydet
-    localStorage.setItem("userToken", response.Token);
-
+    localStorage.setItem("userToken", response.data.token);
+    console.log("response",response.data.token);
     // Redux'a kullanıcıyı kaydet
     dispatch(setUser({ userId: userData.userId }));
 

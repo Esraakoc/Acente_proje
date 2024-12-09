@@ -7,10 +7,10 @@ export const LoginUser = async (data) => {
 
 // Kullanıcı Bilgilerini Getir
 export const GetUserInfo = async () => {
-  return await GetMethodExecutor("http://localhost:7185/api/user");
+  return await GetMethodExecutor("https://localhost:7185/api/user");
 };
 
 // Kullanıcı Çıkışı (Logout)
 export const LogoutUser = async (token) => {
-  return await PostMethodExecutor("http://localhost:7185/api/login/logout", { token });
+  return await PostMethodExecutor("https://localhost:7185/api/login/logout", { token });
 };
