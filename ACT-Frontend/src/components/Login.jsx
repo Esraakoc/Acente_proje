@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { TextField, Typography, Button, Snackbar, Alert, Card, CardContent } from "@mui/material";
 import airplaneIcon from "../images/airplane.png";
 import ticketIcon from "../images/ticket-flight.png";
 import travelIcon from "../images/travel-bag.png";
 import "../styles/login.css";
-import { loginUserAction } from "../store/Redux/UserStore/UserAction";
+import { getUserByIdInfoAction, loginUserAction } from "../store/Redux/UserStore/UserAction";
 
 const Login = () => {
   const [userId, setUserId] = useState("");
@@ -27,6 +27,8 @@ const Login = () => {
       // Login işlemi
       await dispatch(loginUserAction(userInfo));
 
+      await dispatch(getUserByIdInfoAction(userId));
+     
       // Başarılı girişte ana sayfaya yönlendir
       navigate("/");
     } catch (error) {
@@ -38,7 +40,8 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-body">
+        <div className="login-container">
       <div className="login-card">
         <Card  className="login-CardContent" style={{position:"relative"}}>
           <CardContent >
@@ -96,6 +99,8 @@ const Login = () => {
         <Alert severity={snackbarSeverity}>{snackbarMessage}</Alert>
       </Snackbar>
     </div>
+    </div>
+  
   );
 };
 

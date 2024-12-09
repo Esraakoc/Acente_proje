@@ -35,8 +35,12 @@ namespace ACT_API.Controllers
         }
 
         [HttpPost("logout")]
-        public async Task<IActionResult> Logout([FromBody] string token)
+        public async Task<IActionResult> Logout( string token)
         {
+            if(string.IsNullOrEmpty(token))
+            {
+                return BadRequest("Token is required");
+            }
             await TokenService.RevokeTokenAsync(token);
             return Ok("Token has been revoked successfully.");
         }

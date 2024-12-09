@@ -6,4 +6,4 @@ export const PostMethodExecutor = (url,data) => {
 
 export const GetMethodExecutor = (url) => {
     return axios.get(url);
-};
+}; 

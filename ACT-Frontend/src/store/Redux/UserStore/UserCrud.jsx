@@ -10,7 +10,7 @@ export const GetUserInfo = async () => {
   return await GetMethodExecutor("https://localhost:7185/api/user");
 };
 
-// Kullanıcı Çıkışı (Logout)
-export const LogoutUser = async (token) => {
-  return await PostMethodExecutor("https://localhost:7185/api/login/logout", { token });
+
+export const GetUserByIdInfo = async (userId) => {
+  return await GetMethodExecutor(`https://localhost:7185/api/user/${userId}`);
 };

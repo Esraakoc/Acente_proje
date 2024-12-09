@@ -1,5 +1,5 @@
 
-import { LoginUser, GetUserInfo, LogoutUser } from "./UserCrud";
+import { LoginUser, GetUserInfo, GetUserByIdInfo } from "./UserCrud";
 import { setUser, clearUser } from "./UserSlice";
 
 // Kullanıcı Giriş Yapma Aksiyonu
@@ -22,13 +22,26 @@ export const loginUserAction = (userData) => async (dispatch) => {
 };
 
 // Kullanıcı Bilgilerini Alma Aksiyonu
+export const getUserByIdInfoAction = (userId) => async (dispatch) => {
+  try {
+    const response = await GetUserByIdInfo(userId);
+
+    // Redux'a kullanıcı bilgilerini kaydet
+    dispatch(setUser(response.data)); 
+    console.log(response.data);
+    return response;
+  } catch (error) {
+    console.error("Get User Info Error:", error);
+    throw error;
+  }
+};
+// Kullanıcı Bilgilerini Alma Aksiyonu
 export const getUserInfoAction = () => async (dispatch) => {
   try {
     const response = await GetUserInfo();
 
     // Redux'a kullanıcı bilgilerini kaydet
-    dispatch(setUser(response));
-
+    dispatch(setUser(response.data));
     return response;
   } catch (error) {
     console.error("Get User Info Error:", error);
@@ -40,10 +53,9 @@ export const getUserInfoAction = () => async (dispatch) => {
 export const logoutUserAction = () => async (dispatch) => {
   try {
     const token = localStorage.getItem("userToken");
-
-    // Logout API çağrısı
-    await LogoutUser(token);
-
+    if(!token){
+      throw new Error("Token not found");
+    }
     // Redux ve localStorage temizle
     localStorage.removeItem("userToken");
     dispatch(clearUser());
