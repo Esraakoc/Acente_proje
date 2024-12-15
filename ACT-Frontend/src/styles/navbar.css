@@ -1,0 +1,17 @@
+.imgIcon {
+    width: 15vw;
+    height: 3vw;
+}
+
+.navbarDiv {
+    background-color: white !important;
+    width: 100%; /* Tam genişlik */
+    box-shadow: none !important; /* BoxShadow'u kaldır */
+    z-index: 1100; /* Navbar'ın üstte kalmasını sağla */
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.homeRzIcon {
+    gap: 10px;
+    color: black !important;
+}

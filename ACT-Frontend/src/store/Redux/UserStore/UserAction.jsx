@@ -25,7 +25,8 @@ export const loginUserAction = (userData) => async (dispatch) => {
 export const getUserByIdInfoAction = (userId) => async (dispatch) => {
   try {
     const response = await GetUserByIdInfo(userId);
-
+    localStorage.setItem("userId", response.data.userId);
+    console.log("localStorage userId ", response.data.userId);
     // Redux'a kullanıcı bilgilerini kaydet
     dispatch(setUser(response.data)); 
     console.log(response.data);
@@ -35,12 +36,11 @@ export const getUserByIdInfoAction = (userId) => async (dispatch) => {
     throw error;
   }
 };
+
 // Kullanıcı Bilgilerini Alma Aksiyonu
 export const getUserInfoAction = () => async (dispatch) => {
   try {
     const response = await GetUserInfo();
-
-    // Redux'a kullanıcı bilgilerini kaydet
     dispatch(setUser(response.data));
     return response;
   } catch (error) {

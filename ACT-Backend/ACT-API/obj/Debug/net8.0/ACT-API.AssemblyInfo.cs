@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ACT-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5e7eb30dd083a3a8abde9ff908375ab2b6631f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8db58a6416edb08f564213e6f62abdeef7c582e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ACT-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ACT-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

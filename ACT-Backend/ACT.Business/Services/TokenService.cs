@@ -84,11 +84,10 @@ namespace ACT.Business.Services
                     {
                         new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
                         new Claim(ClaimTypes.Email, user.Email),
-                        new Claim("ResetToken", Guid.NewGuid().ToString())
+
                     }),
                     Expires = DateTime.UtcNow.AddMinutes(_expirationMinutes), //geçerlilik süresi
-                    Issuer = _issuer,//tokenı kimin oluşturduğu
-                    Audience = _audience, //kim için geçerli olduğu
+                   
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature) //güvenlik
                 };
                 var token = tokenHandler.CreateToken(tokenDescriptor);
@@ -133,6 +132,41 @@ namespace ACT.Business.Services
         {
             InvalidTokens[token] = DateTime.UtcNow;
             return Task.CompletedTask;
+        }
+        public bool ValidateToken(string token, out string userId)
+        {
+            userId = null;
+            try
+            {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.ASCII.GetBytes(_secretKey);
+
+                var parameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+              
+                    ValidateAudience = false,
+                
+                    ValidateLifetime = false,
+                    ClockSkew = TimeSpan.Zero
+                };
+
+
+                var principal = tokenHandler.ValidateToken(token, parameters, out var validatedToken);
+                if (validatedToken is JwtSecurityToken jwtToken && jwtToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    userId = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                    return true;
+                }
+            }
+            catch (Exception ex) 
+            {
+                // Token geçersizse false döner
+                Console.WriteLine($"Token validation failed: {ex.Message}");
+            }
+            return false;
         }
     }
 }

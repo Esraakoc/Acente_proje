@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const userInfo = { userId, password };
+      const userInfo = { userId, password }; 
 
       // Login işlemi
       await dispatch(loginUserAction(userInfo));

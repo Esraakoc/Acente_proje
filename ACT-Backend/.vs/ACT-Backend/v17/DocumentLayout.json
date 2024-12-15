@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.entity\\models\\actflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|solutionrelative:act.entity\\models\\actflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\flightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\flightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\iflightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\iflightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 160,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "ACT.DataAccess\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAIBJwAsAAAAxAAAA",
+              "DocumentIndex": 3,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\FlightService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\FlightService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\FlightService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\FlightService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T06:19:20.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "ACT-API\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowC0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T12:26:08.314Z",
+              "WhenOpened": "2024-12-15T08:35:30.419Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Program.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Program.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Program.cs",
-              "RelativeToolTip": "ACT-API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAoAAAA",
+              "Title": "FlightRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\FlightRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\FlightRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\FlightRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\FlightRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T07:17:39.688Z",
+              "WhenOpened": "2024-12-15T08:34:34.007Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ILoginService.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\ILoginService.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ILoginService.cs",
-              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T12:23:07.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\Services\\LoginService.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\LoginService.cs",
-              "RelativeToolTip": "ACT.Business\\Services\\LoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T12:23:27.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\TokenService.cs",
-              "RelativeToolTip": "ACT.Business\\Services\\TokenService.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAwwIIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T08:43:11.697Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ACT-API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCEAAAAZAAAA",
+              "Title": "FlightController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\FlightController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\FlightController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\FlightController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\FlightController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwB8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T06:08:52.8Z",
+              "WhenOpened": "2024-12-15T08:37:07.225Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 160,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -148,6 +97,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActFlight.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActFlight.cs",
+              "RelativeDocumentMoniker": "ACT.Entity\\Models\\ActFlight.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActFlight.cs",
+              "RelativeToolTip": "ACT.Entity\\Models\\ActFlight.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T09:20:11.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFlightService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IFlightService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\IFlightService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IFlightService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\IFlightService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T08:36:23.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FlightDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\FlightDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\FlightDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T09:20:00.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IFlightRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T08:36:04.602Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -24,6 +24,7 @@ namespace ACT.Entity.Models
         public DateTime CreatedDate { get; set; }
 
         public DateTime? UpdateAt { get; set; }
+        public string? Airline { get; set; }
 
         public virtual ICollection<ActCart> ActCarts { get; set; } = new List<ActCart>();
 

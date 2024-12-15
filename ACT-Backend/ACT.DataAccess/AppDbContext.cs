@@ -163,6 +163,9 @@ namespace ACT.DataAccess
                 entity.Property(e => e.UpdateAt)
                     .HasColumnType("datetime")
                     .HasColumnName("updateAt");
+                entity.Property(e => e.Airline)
+                  .HasMaxLength(100)
+                  .HasColumnName("airline");
             });
 
             modelBuilder.Entity<ActPayment>(entity =>
@@ -223,10 +226,6 @@ namespace ACT.DataAccess
                 entity.ToTable("ACT_Reservations");
 
                 entity.Property(e => e.ReservationId).HasColumnName("reservationId");
-                entity.Property(e => e.CreatedDate)
-                    .HasDefaultValueSql("(getdate())")
-                    .HasColumnType("datetime")
-                    .HasColumnName("createdDate");
                 entity.Property(e => e.CustomerId).HasColumnName("customerId");
                 entity.Property(e => e.FlightId).HasColumnName("flightId");
                 entity.Property(e => e.ReservationDate)

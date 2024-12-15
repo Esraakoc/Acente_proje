@@ -7,10 +7,27 @@ export const LoginUser = async (data) => {
 
 // Kullanıcı Bilgilerini Getir
 export const GetUserInfo = async () => {
-  return await GetMethodExecutor("https://localhost:7185/api/user");
+  const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+  if (!token) {
+    throw new Error("Token bulunamadı");
+  }
+  return await GetMethodExecutor("https://localhost:7185/api/user",{
+    headers: {
+      Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+    }
+  });
 };
 
 
 export const GetUserByIdInfo = async (userId) => {
-  return await GetMethodExecutor(`https://localhost:7185/api/user/${userId}`);
+  const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+  if (!token) {
+    throw new Error("Token bulunamadı");
+  }
+
+  return await GetMethodExecutor(`https://localhost:7185/api/user/${userId}`, {
+    headers: {
+      Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+    }
+  });
 };

@@ -11,5 +11,6 @@ namespace ACT.Business.Services.Interfaces
     {
         string GeneratePasswordResetToken(ActUser user);
         Task<ActUser> GetUserByResetTokenAsync(string token);
+        bool ValidateToken(string token, out string userId);
     }
 }

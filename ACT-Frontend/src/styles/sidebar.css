@@ -1,0 +1,14 @@
+.sideDiv {
+    margin-top: 64px; /* Navbar yüksekliği */
+    height: calc(100% - 64px); /* Geriye kalan tüm alanı kapla */
+    position: fixed; /* Sabit pozisyon */
+    top: 0;
+    left: 0;
+    width: 240px; /* Sidebar genişliği */
+    z-index: 1000; /* Navbar ile uyumlu katman */
+    background-color: #f4f4f4; /* Arka plan rengi */
+
+  } 
+  .css-cokf1l-MuiListItemIcon-root {
+    min-width: 40px !important ;
+  }
