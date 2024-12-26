@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.entity\\models\\actflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|solutionrelative:act.entity\\models\\actflight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\flightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\flightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\iflightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\iflightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act-api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\addtopaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\addtopaymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\dto\\addtoreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\dto\\addtoreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.business\\services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28F04056-D251-4CE1-B984-1110AB02EF88}|ACT.Business\\ACT.Business.csproj|solutionrelative:act.business\\services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\eskoc\\documents\\github\\acente-proje\\act-backend\\act.dataaccess\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,50 +53,165 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 160,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 138,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FlightService.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\FlightService.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\Services\\FlightService.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\FlightService.cs",
-              "RelativeToolTip": "ACT.Business\\Services\\FlightService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\PaymentController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAqwDsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:35:30.419Z",
+              "WhenOpened": "2024-12-22T14:34:23.642Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlightRepository.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\FlightRepository.cs",
-              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\FlightRepository.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\FlightRepository.cs",
-              "RelativeToolTip": "ACT.DataAccess\\Repositories\\FlightRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "DocumentIndex": 4,
+              "Title": "AddToPaymentDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\AddToPaymentDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\AddToPaymentDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\AddToPaymentDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\AddToPaymentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:34:34.007Z",
+              "WhenOpened": "2024-12-22T17:06:17.581Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "ACT-API\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "ACT-API\\Controllers\\ReservationController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEoAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T17:06:37.575Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:17:53.627Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:18:13.689Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\CustomerService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\CustomerService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:18:58.916Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:19:19.171Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\PaymentService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\PaymentService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T10:45:34.616Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddToReservationDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\AddToReservationDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\AddToReservationDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\AddToReservationDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\AddToReservationDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T11:17:07.12Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\Services\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\ReservationService.cs",
+              "RelativeToolTip": "ACT.Business\\Services\\ReservationService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAjwBwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T20:19:16.304Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FlightController.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\FlightController.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Controllers\\FlightController.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT-API\\Controllers\\FlightController.cs",
-              "RelativeToolTip": "ACT-API\\Controllers\\FlightController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAQwB8AAAAqAAAA",
+              "Title": "FlightDto.cs",
+              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
+              "RelativeDocumentMoniker": "ACT.Business\\DTO\\FlightDto.cs",
+              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
+              "RelativeToolTip": "ACT.Business\\DTO\\FlightDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:37:07.225Z",
+              "WhenOpened": "2024-12-25T20:36:10.869Z",
               "IsPinned": true,
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 182,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
@@ -93,62 +224,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ActFlight.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActFlight.cs",
-              "RelativeDocumentMoniker": "ACT.Entity\\Models\\ActFlight.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\Models\\ActFlight.cs",
-              "RelativeToolTip": "ACT.Entity\\Models\\ActFlight.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T09:20:11.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IFlightService.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IFlightService.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\Services\\Interfaces\\IFlightService.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\Services\\Interfaces\\IFlightService.cs",
-              "RelativeToolTip": "ACT.Business\\Services\\Interfaces\\IFlightService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:36:23.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FlightDto.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
-              "RelativeDocumentMoniker": "ACT.Business\\DTO\\FlightDto.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Business\\DTO\\FlightDto.cs",
-              "RelativeToolTip": "ACT.Business\\DTO\\FlightDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T09:20:00.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IFlightRepository.cs",
-              "DocumentMoniker": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
-              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
-              "ToolTip": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
-              "RelativeToolTip": "ACT.DataAccess\\Repositories\\Interfaces\\IFlightRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T08:36:04.602Z",
-              "EditorCaption": ""
             }
           ]
         }

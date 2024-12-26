@@ -7,8 +7,6 @@ namespace ACT.Entity.Models
     {
         public int CartId { get; set; }
 
-        public int CustomerId { get; set; }
-
         public string UserId { get; set; } = null!;
 
         public int FlightId { get; set; }
@@ -16,8 +14,6 @@ namespace ACT.Entity.Models
         public int Quantity { get; set; }
 
         public DateTime AddedAt { get; set; }
-
-        public virtual ActCustomer Customer { get; set; } = null!;
 
         public virtual ActFlight Flight { get; set; } = null!;
 

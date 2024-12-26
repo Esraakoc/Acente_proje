@@ -1,20 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  campaign: null, // Kullanıcı bilgisi başlangıçta boş
-  
+  campaigns: [],           // Kampanya listesi
+  selectedCampaign: null,  // Seçili kampanya
 };
 
 export const campaignSlice = createSlice({
   name: 'campaign',
   initialState,
   reducers: {
-    setCampaign: (state, action) => {
-      state.campaign = action.payload; // Kullanıcıyı günceller
+    setCampaigns: (state, action) => {
+      state.campaigns = action.payload; // Kampanya listesini günceller
+    },
+    setSelectedCampaign: (state, action) => {
+      state.selectedCampaign = action.payload; // Seçili kampanyayı günceller
     },
   },
 });
 
-export const { setCampaign } = campaignSlice.actions;
+export const { setCampaigns, setSelectedCampaign } = campaignSlice.actions;
 
 export default campaignSlice.reducer;

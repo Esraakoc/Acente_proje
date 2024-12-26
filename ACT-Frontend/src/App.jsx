@@ -11,6 +11,10 @@ import SearchFlight from "./components/SearchFlight.jsx";
 import Reservations from "./components/Reservations.jsx";
 import Campaigns from "./components/Campaigns.jsx";
 import FlightSearchResult from "./components/FlightSearchResult.jsx";
+import CampaignDetail from "./components/CampaignDetail .jsx";
+import CartPage from "./components/CartPage.jsx";
+import PaymentPage from "./components/PaymentPage.jsx";
+import SummaryPage from "./components/SummaryPage.jsx";
 
 function App () {
   const dispatch = useDispatch();
@@ -84,6 +88,38 @@ function App () {
               element={
                 <ProtectedRoute>
                   <FlightSearchResult />
+                </ProtectedRoute>
+              }
+            />
+              <Route
+              path="/campaign/:id"
+              element={
+                <ProtectedRoute>
+                  <CampaignDetail />
+                </ProtectedRoute>
+              }
+            />
+             <Route
+              path="/cart"
+              element={
+                <ProtectedRoute>
+                  <CartPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/payment"
+              element={
+                <ProtectedRoute>
+                  <PaymentPage />
+                </ProtectedRoute>
+              }
+            />
+              <Route
+              path="/summary/:reservationId"
+              element={
+                <ProtectedRoute>
+                  <SummaryPage />
                 </ProtectedRoute>
               }
             />

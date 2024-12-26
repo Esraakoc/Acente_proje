@@ -29,7 +29,7 @@ namespace ACT.DataAccess.Repositories
             var flight = await StatusAll(trackChanges: true).FirstOrDefaultAsync(t => t.FlightId == flightId);
             if (flight == null)
             {
-                throw new Exception($"Campaign with ID {flightId} not found");
+                throw new Exception($"Flight with ID {flightId} not found");
             }
             return flight;
         }

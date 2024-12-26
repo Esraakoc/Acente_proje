@@ -19,7 +19,8 @@ namespace ACT.Entity.Models
 
         public string? Address { get; set; }
 
-        public virtual ICollection<ActCart> ActCarts { get; set; } = new List<ActCart>();
+
+        public virtual ICollection<ActPayment> ActPayments { get; set; } = new List<ActPayment>();
 
         public virtual ICollection<ActReservation> ActReservations { get; set; } = new List<ActReservation>();
     }

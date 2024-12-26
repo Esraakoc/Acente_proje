@@ -80,17 +80,12 @@ namespace ACT.DataAccess
                     .HasDefaultValueSql("(getdate())")
                     .HasColumnType("datetime")
                     .HasColumnName("addedAt");
-                entity.Property(e => e.CustomerId).HasColumnName("customerId");
                 entity.Property(e => e.FlightId).HasColumnName("flightId");
                 entity.Property(e => e.Quantity).HasColumnName("quantity");
                 entity.Property(e => e.UserId)
                     .HasMaxLength(15)
                     .HasColumnName("userId");
 
-                entity.HasOne(d => d.Customer).WithMany(p => p.ActCarts)
-                    .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Cart_Customers");
 
                 entity.HasOne(d => d.Flight).WithMany(p => p.ActCarts)
                     .HasForeignKey(d => d.FlightId)
@@ -175,6 +170,7 @@ namespace ACT.DataAccess
                 entity.ToTable("ACT_Payments");
 
                 entity.Property(e => e.PaymentId).HasColumnName("paymentId");
+                entity.Property(e => e.CustomerId).HasColumnName("customerId");
                 entity.Property(e => e.PaymentAmount)
                     .HasColumnType("decimal(10, 2)")
                     .HasColumnName("paymentAmount");
@@ -182,24 +178,30 @@ namespace ACT.DataAccess
                     .HasDefaultValueSql("(getdate())")
                     .HasColumnType("datetime")
                     .HasColumnName("paymentDate");
-                entity.Property(e => e.PaymentMethod)
-                    .HasMaxLength(50)
-                    .HasColumnName("paymentMethod");
                 entity.Property(e => e.PaymentStatus).HasColumnName("paymentStatus");
-                entity.Property(e => e.ReservationId).HasColumnName("reservationId");
                 entity.Property(e => e.UserId)
                     .HasMaxLength(15)
                     .HasColumnName("userId");
+                entity.Property(e => e.CreditCardNo)
+                      .HasMaxLength(30)
+                      .HasColumnName("creditCardNo"); 
+                entity.Property(e => e.CVV)
+                      .HasMaxLength(5)
+                      .HasColumnName("cvv");
+                entity.Property(e => e.ExpiryDate)
+                      .HasColumnName("expiryDate"); 
 
                 entity.HasOne(d => d.PaymentStatusNavigation).WithMany(p => p.ActPayments)
                     .HasForeignKey(d => d.PaymentStatus)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Payments_Status");
 
-                entity.HasOne(d => d.Reservation).WithMany(p => p.ActPayments)
-                    .HasForeignKey(d => d.ReservationId)
+
+                entity.HasOne(d => d.Customer).WithMany(p => p.ActPayments)
+                    .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Payments_Reservations");
+                    .HasConstraintName("FK_ActPayment_Customer");
+
 
                 entity.HasOne(d => d.User).WithMany(p => p.ActPayments)
                     .HasForeignKey(d => d.UserId)
@@ -227,6 +229,7 @@ namespace ACT.DataAccess
 
                 entity.Property(e => e.ReservationId).HasColumnName("reservationId");
                 entity.Property(e => e.CustomerId).HasColumnName("customerId");
+                entity.Property(e => e.PaymentId).HasColumnName("paymentId");
                 entity.Property(e => e.FlightId).HasColumnName("flightId");
                 entity.Property(e => e.ReservationDate)
                     .HasColumnType("datetime")
@@ -246,6 +249,12 @@ namespace ACT.DataAccess
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Reservations_Customers");
+
+                entity.HasOne(e => e.Payment).WithMany(p => p.ActReservations)
+                   .HasForeignKey(e => e.PaymentId)
+                   .OnDelete(DeleteBehavior.ClientSetNull)
+                   .HasConstraintName("FK_ACT_Reservations_Payment")
+                   .IsRequired(false); // Nullable Foreign Key
 
                 entity.HasOne(d => d.Flight).WithMany(p => p.ActReservations)
                     .HasForeignKey(d => d.FlightId)

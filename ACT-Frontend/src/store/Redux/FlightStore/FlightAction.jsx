@@ -4,7 +4,7 @@ import { GetFlightIdInfo, GetFlightInfo, GetFlightSearchResultInfo} from "./Flig
 // export const getFlightListAction = (data) => async () => {
 //     try {
     
-//     const response = await GetFlightList();
+//     const response = await GetFlightList(); 
 //     return response;
   
 //     } catch (error) {

@@ -19,14 +19,15 @@ namespace ACT.Entity.Models
 
         public int Status { get; set; }
 
+        public int? PaymentId { get; set; }
 
         public DateTime? UpdateDate { get; set; }
 
-        public virtual ICollection<ActPayment> ActPayments { get; set; } = new List<ActPayment>();
 
         public virtual ActCustomer Customer { get; set; } = null!;
 
         public virtual ActFlight Flight { get; set; } = null!;
+        public virtual ActPayment? Payment { get; set; }
 
         public virtual ActReservationStatus StatusNavigation { get; set; } = null!;
 
