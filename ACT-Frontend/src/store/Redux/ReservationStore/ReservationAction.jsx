@@ -1,4 +1,4 @@
-import { AddToReservation, DeleteReservation, GetReservationByIdAction, GetReservationInfo } from "./ReservationCrud";
+import { AddToReservation, DeleteReservation, GetReservationByIdAction, GetReservationByUserIdCrud, GetReservationInfo } from "./ReservationCrud";
 
 
 
@@ -12,6 +12,15 @@ export const getReservationInfoAction = () => async () => {
     }
 };
 
+export const GetReservationByUserIdAction = () => async () => {
+  try {
+    const response = await GetReservationByUserIdCrud();
+    return response;
+  } catch (error) {
+    console.error("Get User Info Error:", error);
+    throw error;
+  }
+};
 export const getReservationByIdInfoAction = (reservationId) => async () => {
   try {
     const response = await GetReservationByIdAction(reservationId);
@@ -37,7 +46,7 @@ export const addToReservationAction = (reservationData) => async () => {
       const response = await AddToReservation(reservationData);
       console.log("Sepete eklendi:", response.data);
       return response;
-    } catch (error) {
+    } catch (error) { 
       console.error("Sepete ekleme sırasında hata oluştu:", error);
       throw error;
     }

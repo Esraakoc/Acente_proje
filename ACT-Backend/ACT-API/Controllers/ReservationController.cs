@@ -66,7 +66,98 @@ namespace ACT_API.Controllers
                     AvailableSeats = reservation.Flight.AvailableSeats,
                     Airline = reservation.Flight.Airline,
                 },
+                Customer = reservation.Customer == null ? null : new CustomerDto
+                {
+                    CustomerId = reservation.Customer.CustomerId,
+                    CustomerName = reservation.Customer.CustomerName,
+                    CustomerSurname = reservation.Customer.CustomerSurname,
+                    Email = reservation.Customer.Email,
+                    Phone = reservation.Customer.Phone
+                },
 
+                Payment = reservation.Payment == null ? null : new PaymentDto
+                {
+                    PaymentId = reservation.Payment.PaymentId,
+                    PaymentAmount = reservation.Payment.PaymentAmount,
+                    PaymentDate = reservation.Payment.PaymentDate,
+                    PaymentStatus = reservation.Payment.PaymentStatus,
+                }
+
+            }).ToList();
+
+            return Ok(reservationDtos);
+        }
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetReservationByUserId([FromQuery] string userId)
+        {
+            if (!Request.Headers.ContainsKey("Authorization"))
+            {
+                return Unauthorized("Authorization header missing");
+            }
+
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "").Trim();
+            if (string.IsNullOrEmpty(token) || !_tokenService.ValidateToken(token, out var userIdFromToken))
+            {
+                return Unauthorized("Invalid or missing token");
+            }
+
+            if (userId != userIdFromToken)
+            {
+                return Forbid("Token does not match the requested user.");
+            }
+
+            // UserId'ye göre rezervasyonları al
+            var reservations = await _reservationService.GetReservationsByUserIdAsync(userId);
+
+            var reservationDtos = reservations.Select(reservation => new ReservationDto
+            {
+                ReservationId = reservation.ReservationId,
+                UserId = reservation.UserId,
+                CustomerId = reservation.CustomerId,
+                FlightId = reservation.FlightId,
+                ReservationDate = reservation.ReservationDate,
+                TotalAmount = reservation.TotalAmount,
+                Status = reservation.Status,
+                PaymentId = reservation.PaymentId,
+                UpdateDate = reservation.UpdateDate,
+
+                User = reservation.User == null ? null : new UserDto
+                {
+                    UserId = reservation.User.UserId,
+                    FirstName = reservation.User.FirstName,
+                    LastName = reservation.User.LastName,
+                    Email = reservation.User.Email,
+                    Phone = reservation.User.Phone
+                },
+
+                Flight = reservation.Flight == null ? null : new FlightDto
+                {
+                    FlightCode = reservation.Flight.FlightCode,
+                    DepartureDate = reservation.Flight.DepartureDate,
+                    ArrivalDate = reservation.Flight.ArrivalDate,
+                    DepartureLocation = reservation.Flight.DepartureLocation,
+                    ArrivalLocation = reservation.Flight.ArrivalLocation,
+                    Price = reservation.Flight.Price,
+                    AvailableSeats = reservation.Flight.AvailableSeats,
+                    Airline = reservation.Flight.Airline
+                },
+
+                Customer = reservation.Customer == null ? null : new CustomerDto
+                {
+                    CustomerId = reservation.Customer.CustomerId,
+                    CustomerName = reservation.Customer.CustomerName,
+                    CustomerSurname = reservation.Customer.CustomerSurname,
+                    Email = reservation.Customer.Email,
+                    Phone = reservation.Customer.Phone
+                },
+
+                Payment = reservation.Payment == null ? null : new PaymentDto
+                {
+                    PaymentId = reservation.Payment.PaymentId,
+                    PaymentAmount = reservation.Payment.PaymentAmount,
+                    PaymentDate = reservation.Payment.PaymentDate,
+                    PaymentStatus = reservation.Payment.PaymentStatus,
+                }
             }).ToList();
 
             return Ok(reservationDtos);
@@ -93,8 +184,8 @@ namespace ACT_API.Controllers
             {
                 return NotFound("Reservation not found");
             }
-
-            var reservationDto = new ReservationDto
+            
+            var reservationDto = reservation.Select(reservation => new ReservationDto
             {
                 ReservationId = reservation.ReservationId,
                 UserId = reservation.UserId,
@@ -125,7 +216,23 @@ namespace ACT_API.Controllers
                     AvailableSeats = reservation.Flight.AvailableSeats,
                     Airline = reservation.Flight.Airline,
                 },
-            };
+                Customer = reservation.Customer == null ? null : new CustomerDto
+                {
+                    CustomerId = reservation.Customer.CustomerId,
+                    CustomerName = reservation.Customer.CustomerName,
+                    CustomerSurname = reservation.Customer.CustomerSurname,
+                    Email = reservation.Customer.Email,
+                    Phone = reservation.Customer.Phone
+                },
+
+                Payment = reservation.Payment == null ? null : new PaymentDto
+                {
+                    PaymentId = reservation.Payment.PaymentId,
+                    PaymentAmount = reservation.Payment.PaymentAmount,
+                    PaymentDate = reservation.Payment.PaymentDate,
+                    PaymentStatus = reservation.Payment.PaymentStatus,
+                }
+            }).ToList();
 
             return Ok(reservationDto);
         }
@@ -169,36 +276,36 @@ namespace ACT_API.Controllers
                 return StatusCode(500, $"An error occurred while processing your request: {ex.Message}");
             }
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteReservation(int id, [FromQuery] string userId)
-        {
-            if (!Request.Headers.ContainsKey("Authorization"))
-            {
-                return Unauthorized("Authorization header missing");
-            }
-            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "").Trim();
-            if (string.IsNullOrEmpty(token) || !_tokenService.ValidateToken(token, out var userIdFromToken))
-            {
-                return Unauthorized("Invalid or missing token");
-            }
-            if (userId != userIdFromToken)
-            {
-                return Forbid("Token does not match the requested user.");
-            }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteReservation(int id, [FromQuery] string userId)
+        //{
+        //    if (!Request.Headers.ContainsKey("Authorization"))
+        //    {
+        //        return Unauthorized("Authorization header missing");
+        //    }
+        //    var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "").Trim();
+        //    if (string.IsNullOrEmpty(token) || !_tokenService.ValidateToken(token, out var userIdFromToken))
+        //    {
+        //        return Unauthorized("Invalid or missing token");
+        //    }
+        //    if (userId != userIdFromToken)
+        //    {
+        //        return Forbid("Token does not match the requested user.");
+        //    }
 
-            try
-            {
-                var result = await _reservationService.DeletetReservation(id);
-                if (!result)
-                {
-                    return NotFound($"Payment with ID {id} not found.");
-                }
-                return NoContent(); // 204 No Content
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
-        }
+        //    try
+        //    {
+        //        var result = await _reservationService.DeletetReservation(id);
+        //        if (!result)
+        //        {
+        //            return NotFound($"Payment with ID {id} not found.");
+        //        }
+        //        return NoContent(); // 204 No Content
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, $"Internal server error: {ex.Message}");
+        //    }
+        //}
     }
 }

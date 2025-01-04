@@ -15,6 +15,8 @@ import CampaignDetail from "./components/CampaignDetail .jsx";
 import CartPage from "./components/CartPage.jsx";
 import PaymentPage from "./components/PaymentPage.jsx";
 import SummaryPage from "./components/SummaryPage.jsx";
+import BookingHistory from "./components/BookingHistory.jsx";
+import ReservationDetail from "./components/ReservationDetail.jsx";
 
 function App () {
   const dispatch = useDispatch();
@@ -67,14 +69,14 @@ function App () {
                 </ProtectedRoute>
               }
             />
-             <Route
+             {/* <Route
               path="/reservations"
               element={
                 <ProtectedRoute>
                   <Reservations />
                 </ProtectedRoute>
               }
-            />
+            /> */}
              <Route
               path="/campaigns"
               element={
@@ -112,6 +114,22 @@ function App () {
               element={
                 <ProtectedRoute>
                   <PaymentPage />
+                </ProtectedRoute>
+              }
+            />
+             <Route
+              path="/reservations"
+              element={
+                <ProtectedRoute>
+                  <BookingHistory />
+                </ProtectedRoute>
+              }
+            />
+             <Route
+              path="/reservation/:reservationId"
+              element={
+                <ProtectedRoute>
+                  <ReservationDetail />
                 </ProtectedRoute>
               }
             />

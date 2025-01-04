@@ -22,21 +22,25 @@ namespace ACT.Business.Services
         {
             return await _reservationRepository.GetReservationAsync();
         }
-        public async Task<ActReservation> GetReservationByIdAsync(int reservationId)
+        public async Task<List<ActReservation>> GetReservationByIdAsync(int reservationId)
         {
             return await _reservationRepository.GetReservationByIdAsync(reservationId);
         }
-        public async Task<bool> DeletetReservation(int reservationId)
+        public async Task<List<ActReservation>> GetReservationsByUserIdAsync(string userId)
         {
-            var reservation = await _reservationRepository.GetReservationByIdAsync(reservationId);
-            if (reservation == null)
-            {
-                return false;
-            }
-
-            await _reservationRepository.DeleteReservationAsync(reservation);
-            return true;
+            return await _reservationRepository.GetReservationsByUserIdAsync(userId);
         }
+        //public async Task<bool> DeletetReservation(int reservationId)
+        //{
+        //    var reservation = await _reservationRepository.GetReservationByIdAsync(reservationId);
+        //    if (reservation == null)
+        //    {
+        //        return false;
+        //    }
+
+        //    await _reservationRepository.DeleteReservationAsync(reservation);
+        //    return true;
+        //}
         public async Task<ActReservation> AddToReservation(AddToReservationDto reservationDto)
         {
             var newReservation = new ActReservation

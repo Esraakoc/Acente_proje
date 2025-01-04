@@ -21,7 +21,7 @@ namespace ACT.Business.DTO
 
         public string CreditCardNo { get; set; } = null!;
 
-        public DateTime ExpiryDate { get; set; }
+        public string ExpiryDate { get; set; } = null!;
 
         public string CVV { get; set; } = null!;
         public UserDto? User { get; set; }  // User bilgileri

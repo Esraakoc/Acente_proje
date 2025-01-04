@@ -15,6 +15,8 @@ import {
   Step,
   StepLabel,
 } from "@mui/material";
+import barkod from "../images/barkod.png"
+import "../styles/paymentPage.css";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import { useDispatch, useSelector } from "react-redux";
 import { addToPaymentAction } from "../store/Redux/PaymentStore/PaymentAction";
@@ -42,8 +44,6 @@ const PaymentPage = () => {
   const selectedFlight = useSelector((state) => state.cart.selectedFlight); // Redux
   const [isCustomerInfoSubmitted, setIsCustomerInfoSubmitted] = useState(false);
   const [isPaymentInfoSubmitted, setIsPaymentInfoSubmitted] = useState(true);
-  const [isEditingCustomerInfo, setIsEditingCustomerInfo] = useState(false);
-  const [isEditingPaymentInfo, setIsEditingPaymentInfo] = useState(false);
   const [saveCard, setSaveCard] = useState(false);
 
   const handleCustomerInputChange = (e) => {
@@ -143,7 +143,23 @@ const PaymentPage = () => {
     justifyContent: "space-between",
     backgroundColor:"#f6f7fb",
   };
-
+  const calculateFlightDuration = (departureDate, arrivalDate) => {
+    const departure = new Date(departureDate);
+    const arrival = new Date(arrivalDate);
+  
+    const durationMs = arrival - departure; // Farkı milisaniye olarak hesapla
+    const durationHours = Math.floor(durationMs / (1000 * 60 * 60)); // Milisaniyeden saat
+    const durationMinutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60)); // Kalan dakika
+    if(durationMinutes>0 && durationHours>0)
+    { 
+      return `${durationHours} saat ${durationMinutes} dakika`;
+    }else if(durationMinutes>0 && durationHours<1){
+      return ` ${durationMinutes} dakika`;
+    }else{
+      return `${durationHours} saat`;
+    }
+   
+  };
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between", padding: "20px",marginTop:"60px" }}>
       {/* Sol Taraf: Müşteri ve Ödeme Bilgileri */}
@@ -236,17 +252,17 @@ const PaymentPage = () => {
           ) : (
             <CardContent>
               
-              <CardActions sx={{display:"flex", justifyContent:"space-between"}}><Typography variant="h6">Müşteri Bilgileri</Typography>
+              <CardActions sx={{display:"flex", justifyContent:"space-between"}}><Typography variant="h6" sx={{fontWeight:"bold"}}>Müşteri Bilgileri</Typography>
                 <IconButton onClick={handleEditCustomerInfo}>
                   <BorderColorIcon />
                 </IconButton>
               </CardActions>
-              <Typography>Ad: {customerInfo.firstName}</Typography>
-              <Typography>Soyad: {customerInfo.lastName}</Typography>
-              <Typography>Telefon: {customerInfo.phone}</Typography>
-              <Typography>Email: {customerInfo.email}</Typography>
-              <Typography>Adres: {customerInfo.address}</Typography>
-              <Typography>Doğum Tarihi: {customerInfo.birthDate}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}> Ad: </span>{customerInfo.firstName}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Soyad: </span>{customerInfo.lastName}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Telefon: </span>{customerInfo.phone}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Email: </span>{customerInfo.email}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Adres: </span>{customerInfo.address}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Doğum Tarihi: </span>{customerInfo.birthDate}</Typography>
              
             </CardContent>
           )}
@@ -310,51 +326,112 @@ const PaymentPage = () => {
           ) : (
             <CardContent>
               <CardActions sx={{display:"flex", justifyContent:"space-between"}}>
-                  <Typography variant="h6">Ödeme Bilgileri</Typography>
+                  <Typography variant="h6" sx={{fontWeight:"bold"}}>Ödeme Bilgileri</Typography>
                 <IconButton onClick={handleEditPaymentInfo}>
                   <BorderColorIcon />
                 </IconButton>
               </CardActions>
             
-              <Typography>
-                Kredi Kartı No: ** ** ** {paymentInfo.creditCardNo.slice(-4)}
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Kredi Kartı No: </span>
+                 ** ** ** {paymentInfo.creditCardNo.slice(-4)}
               </Typography>
-              <Typography>Son Kullanma Tarihi: {paymentInfo.expiryDate}</Typography>
-              <Typography>CVV: *</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>Son Kullanma Tarihi: </span> {paymentInfo.expiryDate}</Typography>
+              <Typography sx={{display:"flex",justifyContent:"flex-start"}}><span style={{fontWeight:"bold"}}>CVV: </span> *</Typography>
               
             </CardContent>
           )}
         </Card>
-
-       
       </Box>
 
 
-      {/* Sağ Taraf: Uçuş Bilgileri */}
-      <Box sx={{ flex: 1 }}>
-        {selectedFlight ? (
-          <Card sx={{ ...cardFlightStyle }}>
-            <CardContent>
-              <Typography variant="h6" gutterBottom sx={{ fontWeight: "bold" }}>
+
+
+      <main className="ticket-system">
+        <div className="receipts-wrapper"> 
+          <div className="receipts-payment">
+            <div className="receipt">    
+              <Typography variant="h5" component="div" >
                 Uçuş Bilgileri
               </Typography>
-              <Typography><strong>Nereden: </strong>{selectedFlight.departureLocation}</Typography>
-              <Typography><strong>Nereye: </strong>{selectedFlight.arrivalLocation}</Typography>
-              <Typography><strong>Tarih: </strong> {selectedFlight.departureDate}</Typography>
-              <Typography><strong>Uçuş No: </strong>{selectedFlight.flightCode}</Typography>
-              <hr/>
-              <Typography><strong>Fiyat: </strong>{selectedFlight.price} TL</Typography>
-            </CardContent>
-          </Card>
-        ) : (
-          <Typography>Uçuş bilgisi seçilmedi...</Typography>
-        )}
+              <Typography variant="h5" sx={{color:"#506bfd", fontWeight:"bold"}}>
+                {selectedFlight.airline}
+              </Typography>
 
-        {/* İşlemi Tamamla */}
+              <div className="route">
+                <Typography variant="h5" sx={{fontWeight:"bold"}}>
+                  {selectedFlight.departureLocation}
+                </Typography>
+                  <svg
+                    className="plane-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 510 510"
+                  >
+                    <path
+                      fill="#3f32e5"
+                      d="M497.25 357v-51l-204-127.5V38.25C293.25 17.85 275.4 0 255 0s-38.25 17.85-38.25 38.25V178.5L12.75 306v51l204-63.75V433.5l-51 38.25V510L255 484.5l89.25 25.5v-38.25l-51-38.25V293.25l204 63.75z"
+                    />
+                  </svg>
+                <Typography variant="h5" sx={{fontWeight:"bold"}}>
+                  {selectedFlight.arrivalLocation}
+                </Typography>
+              </div>
+              <h4 style={{textAlign:"center",margin:"0 0 20px 0"}}>{calculateFlightDuration(selectedFlight.departureDate, selectedFlight.arrivalDate)}</h4>
+              <div className="details">
+              <div className="item">
+                <span>Tarih</span>
+                <h3>
+                  {new Date(selectedFlight.departureDate)
+                    .toLocaleString("tr-TR", {
+                      year: "numeric",
+                      month: "long", 
+                      day: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
+                </h3>
+              </div>
+                <div className="item">
+                  <span>Uçuş Kodu</span>
+                  <h3>{selectedFlight.flightCode}</h3>
+                </div>`
+                <div className="item">
+                  <span>Bagaj</span>
+                  <h3>El Bagajı</h3>
+                </div>
+                <div className="item">
+                  <span>Koltuk</span>
+                  <h3>69P</h3>
+                </div>
+                <div className="item">
+                  <span>Fiyat</span>
+                  <h3>{selectedFlight.price} TL</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="receipt qr-code">
+              <svg
+                className="qr"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 29.938 29.938"
+              >
+                <path d="M7.129..." />
+              </svg>
+              <div className="description">
+                <img src={barkod}/>
+                <div style={{display:"block"}}>
+                  <h2>{selectedFlight.flightCode}</h2>
+                  <p>Talep Edildiğinde QR kodunu gösterebilirsin!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
         <Button variant="contained" onClick={handleComplete} fullWidth sx={{backgroundColor:"black"}}>
           İşlemi Tamamla
         </Button>
-      </Box>
+      </main>
   
     </Box>
   );

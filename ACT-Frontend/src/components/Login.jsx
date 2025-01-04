@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { TextField, Typography, Button, Snackbar, Alert, Card, CardContent } from "@mui/material";
 import airplaneIcon from "../images/airplane.png";
@@ -24,15 +24,12 @@ const Login = () => {
     try {
       const userInfo = { userId, password }; 
 
-      // Login işlemi
       await dispatch(loginUserAction(userInfo));
 
       await dispatch(getUserByIdInfoAction(userId));
      
-      // Başarılı girişte ana sayfaya yönlendir
       navigate("/");
     } catch (error) {
-      // Hata durumunda mesaj göster
       setSnackbarMessage("Login failed: " + error.message);
       setSnackbarSeverity("error");
       setOpenSnackbar(true);

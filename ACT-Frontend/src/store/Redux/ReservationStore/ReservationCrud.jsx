@@ -12,9 +12,21 @@ export const GetReservationInfo = async () => {
       headers: {
         Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
       }
-   });
+   }); 
  };
+ export const GetReservationByUserIdCrud = async() => {
+  const token = localStorage.getItem("userToken");
+  const userId = localStorage.getItem("userId");
 
+  if (!token) {
+      throw new Error("Token bulunamadı");
+  }
+  return await GetMethodExecutor(`https://localhost:7185/api/reservation/user/${userId}?userId=${userId}`, {
+      headers: { 
+          Authorization: `Bearer ${token}`,
+      },
+  });
+}
  export const GetReservationByIdAction = async(reservationId) => {
     const token = localStorage.getItem("userToken");
     const userId = localStorage.getItem("userId");

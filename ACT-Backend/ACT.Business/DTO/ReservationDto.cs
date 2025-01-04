@@ -27,8 +27,9 @@ namespace ACT.Business.DTO
 
         public DateTime? UpdateDate { get; set; }
 
-
+        public CustomerDto? Customer { get; set; }
         public UserDto? User { get; set; }
         public FlightDto? Flight { get; set; }
+        public PaymentDto? Payment { get; set; }
     }
 }

@@ -11,8 +11,9 @@ namespace ACT.Business.Services.Interfaces
     public interface IReservationService
     {
         Task<IEnumerable<ActReservation>> GetReservationAsync();
-        Task<bool> DeletetReservation(int reservationId);
+        //Task<bool> DeletetReservation(int reservationId);
         Task<ActReservation> AddToReservation(AddToReservationDto reservationDto);
-        Task<ActReservation> GetReservationByIdAsync(int reservationId);
+        Task<List<ActReservation>> GetReservationByIdAsync(int reservationId);
+        Task<List<ActReservation>> GetReservationsByUserIdAsync(string userId);
     }
 }

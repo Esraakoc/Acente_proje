@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+  
+  .box {
+    position: relative;
+    width: 600px;
+    margin: 50px auto;
+  }
+  
+  .ticket {
+    width: 600px;
+    height: 250px;
+    background: #ffb300;
+    border-radius: 3px;
+    box-shadow: 0 0 100px #aaa;
+    border-top: 1px solid #e89f3d;
+    border-bottom: 1px solid #e89f3d;
+    position: relative;
+  }
+  .ticketRed {
+    width: 600px;
+    height: 250px;
+    background: #c90019;
+    border-radius: 3px;
+    box-shadow: 0 0 100px #aaa;
+    border-top: 1px solid #e89f3d;
+    border-bottom: 1px solid #e89f3d;
+    position: relative;
+  }
+  
+  .left,
+  .right {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+  }
+  
+  .left {
+    left: -5px;
+  }
+  
+  .right {
+    right: -5px;
+  }
+  
+  .left li,
+  .right li {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+  
+  .left li {
+    border-right: 5px solid #ffb300;
+  }
+  
+  .right li {
+    border-left: 5px solid #ffb300;
+  }
+  
+  .airline {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 102, 1);
+  }
+  
+  .boarding {
+    position: absolute;
+    top: 10px;
+
+    right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .jfk,
+  .sfo {
+   
+    top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .jfk {
+    left: 30px;
+  }
+  
+  .sfo {
+    left: 180px;
+  }
+  
+  .plane {
+
+    left: 120px;
+    top: 18px;
+  }
+  
+  .sub-content {
+    background: #e5e5e5;
+    width: 100%;
+    height: 70px;
+
+  }
+  .contentPlane{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .name,
+  .flight,
+  .gate,
+  .seat,
+  .boardingtime {
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .name span,
+  .flight span,
+  .gate span,
+  .seat span,
+  .boardingtime span {
+    display: block;
+    color: #555;
+    font-size: 17px;
+  }
+  
+  .barcode {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 90px;
+    background: #222;
+  }
+  
+  .barcode.slip {
+    left: 455px;
+  }

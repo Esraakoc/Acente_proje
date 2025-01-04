@@ -37,7 +37,7 @@ const Campaigns = () => {
     fetchData();
   }, [dispatch]);
 
-  // Kampanya görseli için dinamik URL fonksiyonu
+
   const getImagePath = (campaignId) => {
 
     return campaignImages[campaignId] || kampanya2;

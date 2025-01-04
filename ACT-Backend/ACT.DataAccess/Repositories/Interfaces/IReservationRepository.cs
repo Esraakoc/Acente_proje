@@ -10,8 +10,9 @@ namespace ACT.DataAccess.Repositories.Interfaces
     public interface IReservationRepository
     {
         Task<IEnumerable<ActReservation>> GetReservationAsync();
-        Task<ActReservation> GetReservationByIdAsync(int reservationId);
+        Task<List<ActReservation>> GetReservationByIdAsync(int reservationId);
         Task CreateReservationAsync(ActReservation reservation);
         Task DeleteReservationAsync(ActReservation reservation);
+        Task<List<ActReservation>> GetReservationsByUserIdAsync(string userId);
     }
 }

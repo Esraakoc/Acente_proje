@@ -17,6 +17,11 @@ body {
   width: 208vh;
   background: linear-gradient(to right, #506bfd, #eda123);
 }
+@media (min-width: 1920px){
+  .login-body{
+    width: 201vh;
+  }
+}
 .login-container {
   display: flex;
   flex-direction: row;
@@ -61,7 +66,8 @@ body {
 }
 
 .forgot-password {
-  margin-top: 10px;
+  display: flex;
+  margin: 5px !important;
   color: #506bfd;
 }
 

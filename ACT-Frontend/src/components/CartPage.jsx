@@ -102,10 +102,9 @@ const CartPage = () => {
                   boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
                 }}
               >
-                <Typography
+                <Typography variant="h5"
                   sx={{
-                    fontFamily: "Arial",
-                    fontSize: "18px",
+                    fontFamily: "Arial", 
                     fontWeight: "bold",
                     color: "#003366",
                     position: "absolute",

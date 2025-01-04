@@ -189,6 +189,7 @@ namespace ACT.DataAccess
                       .HasMaxLength(5)
                       .HasColumnName("cvv");
                 entity.Property(e => e.ExpiryDate)
+                      .HasMaxLength(7)
                       .HasColumnName("expiryDate"); 
 
                 entity.HasOne(d => d.PaymentStatusNavigation).WithMany(p => p.ActPayments)

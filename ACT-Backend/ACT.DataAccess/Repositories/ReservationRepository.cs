@@ -24,12 +24,27 @@ namespace ACT.DataAccess.Repositories
         {
             return await StatusAll(trackChanges: false).ToListAsync();
         }
-        public async Task<ActReservation> GetReservationByIdAsync(int reservationId)
+        public async Task<List<ActReservation>> GetReservationsByUserIdAsync(string userId)
+        {
+            return await _context.ActReservations
+                .Include(r => r.User) // Kullanıcı bilgilerini dahil et
+                .Include(r => r.Flight) // Uçuş bilgilerini dahil et
+                .Include(r => r.Customer) // Müşteri bilgilerini dahil et
+                .Include(r => r.Payment) // Ödeme bilgilerini dahil et
+                .Include(r => r.StatusNavigation) // Rezervasyon durumu
+                .Where(r => r.UserId == userId) // Sadece belirtilen UserId'ye ait rezervasyonlar
+                .ToListAsync();
+        }
+        public async Task<List<ActReservation>> GetReservationByIdAsync(int reservationId)
         {
             return await _context.ActReservations
                 .Include(r => r.User) // User bilgilerini dahil et
-                .Include(r => r.Flight) // Flight bilgilerini dahil et
-                .FirstOrDefaultAsync(r => r.ReservationId == reservationId);
+                .Include(r => r.Flight)
+                .Include(r => r.Customer) // Müşteri bilgilerini dahil et
+                .Include(r => r.Payment)
+                .Include(r => r.StatusNavigation)// Flight bilgilerini dahil et
+                .Where(r => r.ReservationId == reservationId)
+                .ToListAsync();
         }
         //public async Task<ActReservation> GetReservationByIdAsync(int reservationId)
         //{

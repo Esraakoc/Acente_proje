@@ -17,9 +17,9 @@ namespace ACT.Entity.Models
 
         public int PaymentStatus { get; set; }
 
-        public string CreditCardNo { get; set; } = null!; 
+        public string CreditCardNo { get; set; } = null!;
 
-        public DateTime ExpiryDate { get; set; }
+        public string ExpiryDate { get; set; } = null!;
 
         public string CVV { get; set; } = null!;
 
