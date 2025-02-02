@@ -43,19 +43,15 @@ Sistem; **bilet satış, rezervasyon takibi, kampanya yönetimi ve gelişmiş ar
 📌 **Anasayfa**, kullanıcıların bilet arayabileceği, kampanyaları görebileceği ve uçuş detaylarına ulaşabileceği bölümdür. Kullanıcılar, kalkış-varış noktalarını seçerek arama yapabilir ve bilet fiyatlarını karşılaştırabilir.  
 
 ### **🪑 Koltuk Seçme Sayfası**  
-![Koltuk Seçme](./screenshots/seat_selection.png)  
+![Koltuk Seçme](https://github.com/user-attachments/assets/80be64ca-74e4-4a6c-be1f-a9734ae256a5) 
 📌 **Koltuk Seçme Sayfası**, uçuşunu seçen yolcuların uygun koltukları görüntüleyerek rezervasyon yapabileceği bölümdür. **Mevcut ve rezerve edilmiş koltuklar farklı renklerle gösterilir.** Kullanıcı seçimini yaparak ödeme adımına geçebilir.  
 
 ---
 
 ## 🔧 **Teknolojiler ve Kullanılan Araçlar**
-- **Frontend:** React.js, Redux, Bootstrap  
-- **Backend:** Node.js, Express.js, .NET Core  
-- **Database:** PostgreSQL, MongoDB  
-- **Ödeme Sistemi:** Stripe API, Iyzico  
-- **Diğer Araçlar:** Git, GitHub Actions, Docker, Jest (Test)  
+- **Frontend:** React.js, Redux, MUI  
+- **Backend:** ASP.NET Core Web API, Entity Framework Core  
+- **Database:** SQL server, MongoDB   
 
 ---
-
-
 
