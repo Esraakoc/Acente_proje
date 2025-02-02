@@ -13,10 +13,10 @@ using ACT_API.Configuration;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-// MVC mimarisinin API controllerlarýný ekler
+
 builder.Services.AddControllers();
 
-// CORS'u etkinleþtir
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -28,16 +28,7 @@ builder.Services.AddCors(options =>
         });
 });
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowAllOrigins",
-//        builder =>
-//        {
-//            builder.WithOrigins("http://localhost:5173", "http://127.0.0.1:5173")
-//                   .AllowAnyMethod()
-//                   .AllowAnyHeader();
-//        });
-//});
+
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
 
@@ -50,7 +41,6 @@ if (jwtSettings == null || string.IsNullOrEmpty(jwtSettings.SecretKey) ||
     throw new InvalidOperationException("JWT settings are not configured properly.");
 }
 
-// Add services to the container.
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -149,7 +139,6 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline. 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

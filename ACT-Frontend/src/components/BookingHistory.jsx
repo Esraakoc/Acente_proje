@@ -102,12 +102,12 @@ const BookingHistory = () => {
   };
 
   const handleChangePage = (event, newPage) => {
-    setPage(newPage); // Yeni sayfa numarasını ayarla
+    setPage(newPage); 
   };
 
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10)); // Yeni satır sayısını ayarla
-    setPage(0); // İlk sayfaya dön
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0); 
   };
 
   return (

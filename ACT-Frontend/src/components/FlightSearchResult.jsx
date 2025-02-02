@@ -26,7 +26,6 @@ const FlightSearchResult = () => {
   const [filteredFlights, setFilteredFlights] = useState([]);
   const [error, setError] = useState("");
 
-  // Filtreler için state
   const [selectedAirlines, setSelectedAirlines] = useState([]);
   const [priceRange, setPriceRange] = useState([1000, 5000]);
   const [departureTimeRange, setDepartureTimeRange] = useState([0, 24]);
@@ -65,7 +64,7 @@ const FlightSearchResult = () => {
           getFlightSearchAction(departureLocation, arrivalLocation, departureDate)
         );
         setFlights(response.data);
-        setFilteredFlights(response.data); // Başlangıçta tüm veriler
+        setFilteredFlights(response.data); 
       } catch (err) {
         setError("Uygun uçuş bulunamadı.");
       }
@@ -76,14 +75,12 @@ const FlightSearchResult = () => {
     }
   }, [departureLocation, arrivalLocation, departureDate, dispatch]);
 
-  // Havayolu filtresi
   const handleAirlineFilter = (airline) => {
     setSelectedAirlines((prev) =>
       prev.includes(airline) ? prev.filter((a) => a !== airline) : [...prev, airline]
     );
   };
 
-  // Filtreleme işlemi
   useEffect(() => {
     const filtered = flights.filter((flight) => {
       const flightPrice = flight.price;
@@ -103,26 +100,24 @@ const FlightSearchResult = () => {
 
   const handleAddToCart = async (flight) => {
     const cartData = {
-      UserId: localStorage.getItem("userId"), // Kullanıcı ID'si
-      FlightId: flight.flightId, // Seçilen uçuş ID'si
-      Quantity: 1 // Varsayılan olarak 1 adet
+      UserId: localStorage.getItem("userId"), 
+      FlightId: flight.flightId, 
+      Quantity: 1 
     };
     try {
-      await dispatch(addToCartAction(cartData)); // Redux aksiyonunu çağır
-      navigate("/cart"); // Sepet sayfasına yönlendir
+      await dispatch(addToCartAction(cartData)); 
+      navigate("/cart"); 
     } catch (error) {
       console.error("Sepete ekleme hatası:", error);
     }
   };
   return (
     <Box sx={{ display: "flex", marginTop: "64px" }}>
-      {/* Filtre Bölümü */}
       <Box sx={{ width: "20%", padding: 2, border: "1px solid #d7d7d7", borderRadius: "15px",}}>
         <Typography variant="h6" gutterBottom>
           Filtre
         </Typography>
         <hr/>
-        {/* Havayolu Filtreleme */}
         <Box>
           <Typography variant="subtitle1">Havayolları</Typography>
           <FormControlLabel
@@ -139,7 +134,6 @@ const FlightSearchResult = () => {
           />
         </Box>
         <hr/>
-        {/* Fiyat Filtreleme */}
         <Box>
           <Typography variant="subtitle1">Fiyat Aralığı</Typography>
           <Slider
@@ -151,7 +145,6 @@ const FlightSearchResult = () => {
           />
         </Box>
         <hr/>
-        {/* Kalkış Saati Filtreleme */}
         <Box>
           <Typography variant="subtitle1">Kalkış Saati</Typography>
           <Slider
@@ -165,7 +158,6 @@ const FlightSearchResult = () => {
       </Box>
 <Box sx={{width:"100%"}}>
       <Box sx={{ flex: 1, padding: 2 }}>
-        {/* Nereden - Nereye - Tarih Bölümü */}
         <Box
           sx={{
             display: "flex",
@@ -186,7 +178,7 @@ const FlightSearchResult = () => {
           />
           <Button variant="contained">Ara</Button>
         </Box>
-      </Box>   {/* Uçuş Kartları Bölümü */}
+      </Box>  
       <Box sx={{ flex: 1, padding: 2 }}>
         <Typography variant="h5" gutterBottom>
           Arama Sonuçları
@@ -238,15 +230,13 @@ const FlightSearchResult = () => {
           </Typography>
         </Box>
 
-      {/* Kartlar */}
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2, marginTop: "16px", }}>
         {sortedFlights.map((flight) => {
-          // Süre hesaplama (varış saatinden kalkış saati çıkarılır)
           const departureTime = new Date(flight.departureDate);
           const arrivalTime = new Date(flight.arrivalDate);
-          const durationInMinutes = Math.floor((arrivalTime - departureTime) / (1000 * 60)); // Dakika cinsinden fark
-          const hours = Math.floor(durationInMinutes / 60); // Saat cinsinden
-          const minutes = durationInMinutes % 60; // Dakika cinsinden kalan
+          const durationInMinutes = Math.floor((arrivalTime - departureTime) / (1000 * 60)); 
+          const hours = Math.floor(durationInMinutes / 60); 
+          const minutes = durationInMinutes % 60; 
 
           return (
             <Card
@@ -261,7 +251,6 @@ const FlightSearchResult = () => {
                 border: "1px solid #d7d7d7",
               }}
             >
-              {/* Havayolu */}
               <Box sx={{ flex: 1, alignItems: "center",marginLeft:"10px" }}>
                 <img
                   src={flight.airline === "Pegasus" ? pegasusImg : thyImg}
@@ -273,28 +262,28 @@ const FlightSearchResult = () => {
                 </Typography>
               </Box>
 
-              {/* Kalkış Bilgisi */}
+    
               <Box sx={{ flex: 1, textAlign: "center" }}>
                 <Typography>
                   {departureTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                 </Typography>
               </Box>
 
-              {/* Süre */}
+
               <Box sx={{ flex: 1, textAlign: "center" }}>
                 <Typography>
                   {hours}sa {minutes}dk
                 </Typography>
               </Box>
 
-              {/* Varış Bilgisi */}
+       
               <Box sx={{ flex: 1, textAlign: "center" }}>
                 <Typography>
                   {arrivalTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                 </Typography>
               </Box>
 
-              {/* Fiyat ve Seç Butonu */}
+          
               <Box sx={{ flex: 1, textAlign: "right" }}>
                 <Typography >
                   {flight.price} TL

@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  cartList: [], // Sepet uçuşlarını saklamak için bir dizi
-  selectedFlight: null, // Ödeme sayfasında gösterilecek seçilen uçuş
+  cartList: [], 
+  selectedFlight: null, 
 };
 
 export const CartSlice = createSlice({
@@ -10,13 +10,13 @@ export const CartSlice = createSlice({
   initialState,
   reducers: {
     addCartList: (state, action) => {
-      state.cartList = [...state.cartList, action.payload]; // Yeni uçuşu mevcut listeye ekler
+      state.cartList = [...state.cartList, action.payload]; 
     },
     clearCart: (state) => {
-      state.cartList = []; // Sepeti temizler
+      state.cartList = []; 
     },
     setFlightInfo: (state, action) => {
-      state.selectedFlight = action.payload; // Ödeme için seçilen uçuş bilgisini saklar
+      state.selectedFlight = action.payload; 
     },
   },
 });

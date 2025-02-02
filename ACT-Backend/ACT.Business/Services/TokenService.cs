@@ -26,21 +26,20 @@ namespace ACT.Business.Services
 
         private static readonly ConcurrentDictionary<string, DateTime> InvalidTokens = new ConcurrentDictionary<string, DateTime>();
 
-        // Token temizleme mekanizması
         static TokenService()
         {
             Task.Run(async () =>
             {
                 while (true)
                 {
-                    await Task.Delay(TimeSpan.FromHours(1)); // Her 1 saatte bir
+                    await Task.Delay(TimeSpan.FromHours(1)); 
                     var expiredTokens = InvalidTokens
-                        .Where(t => t.Value.AddHours(6) < DateTime.UtcNow) // 6 saatten eski token'ları seç
+                        .Where(t => t.Value.AddHours(6) < DateTime.UtcNow) 
                         .Select(t => t.Key).ToList();
 
                     foreach (var token in expiredTokens)
                     {
-                        InvalidTokens.TryRemove(token, out _); // Geçersiz token'ı listeden kaldır
+                        InvalidTokens.TryRemove(token, out _); 
                     }
                 }
             });
@@ -69,7 +68,7 @@ namespace ACT.Business.Services
         {
             try
             {
-                //JWT Handler ve (Secret Key) Tanımlamama
+         
                 var tokenHandler = new JwtSecurityTokenHandler();
                 if (string.IsNullOrEmpty(_secretKey))
                 {
@@ -77,7 +76,7 @@ namespace ACT.Business.Services
                 }
 
                 var key = Encoding.ASCII.GetBytes(_secretKey);
-                //Token Tanımlayıcı Oluşturma
+            
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Subject = new ClaimsIdentity(new[]
@@ -86,9 +85,9 @@ namespace ACT.Business.Services
                         new Claim(ClaimTypes.Email, user.Email),
 
                     }),
-                    Expires = DateTime.UtcNow.AddMinutes(_expirationMinutes), //geçerlilik süresi
+                    Expires = DateTime.UtcNow.AddMinutes(_expirationMinutes), 
                    
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature) //güvenlik
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature) 
                 };
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 var tokenString = tokenHandler.WriteToken(token);
@@ -101,7 +100,6 @@ namespace ACT.Business.Services
             }
         }
 
-        // Reset Token ile kullanıcıyı bulma
         public async Task<ActUser> GetUserByResetTokenAsync(string token)
         {
             try
@@ -163,7 +161,7 @@ namespace ACT.Business.Services
             }
             catch (Exception ex) 
             {
-                // Token geçersizse false döner
+        
                 Console.WriteLine($"Token validation failed: {ex.Message}");
             }
             return false;

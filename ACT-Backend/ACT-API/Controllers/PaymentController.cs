@@ -49,7 +49,7 @@ namespace ACT_API.Controllers
                 ExpiryDate = payment.ExpiryDate,
                 CVV = payment.CVV,
 
-                // User bilgileri
+             
                 User = payment.User == null ? null :new UserDto
                 {
                     UserId = payment.UserId,
@@ -89,17 +89,17 @@ namespace ACT_API.Controllers
 
             try
             {
-                // Müşteri kontrolü ve oluşturma
+          
                 var customer = await _customerService.GetOrCreateCustomerAsync(
                     paymentDto.FirstName,
                     paymentDto.LastName,
                     paymentDto.Phone
                 );
 
-                // PaymentDto'ya müşteri ID'sini ekle
+             
                 paymentDto.CustomerId = customer.CustomerId;
 
-                // Ödeme oluştur
+           
                 var newPayment = await _paymentService.CreatePaymentAsync(paymentDto);
 
                 return Ok(new { message = "Payment created successfully", payment = newPayment });
@@ -138,7 +138,7 @@ namespace ACT_API.Controllers
                 {
                     return NotFound($"Payment with ID {id} not found.");
                 }
-                return NoContent(); // 204 No Content
+                return NoContent(); 
             }
             catch (Exception ex)
             {

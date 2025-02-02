@@ -18,8 +18,8 @@ namespace ACT.Business.DTO
 
         public DateTime AddedAt { get; set; }
 
-        public UserDto? User { get; set; }  // User bilgileri
-        public FlightDto? Flight { get; set; } // Flight bilgileri
+        public UserDto? User { get; set; } 
+        public FlightDto? Flight { get; set; } 
 
     }
 }

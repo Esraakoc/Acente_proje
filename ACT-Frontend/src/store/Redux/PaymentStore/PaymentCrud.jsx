@@ -2,21 +2,21 @@ import { DeleteMethodExecutor, GetMethodExecutor, PostMethodWithTokenExecutor } 
 
 
 export const GetPaymentInfo = async () => {
-    const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+    const token = localStorage.getItem("userToken"); 
     const userId = localStorage.getItem("userId");
     if (!token) {
       throw new Error("Token bulunamadı"); 
     }
     return await GetMethodExecutor(`https://localhost:7185/api/payment?userId=${userId}`,{
       headers: {
-        Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+        Authorization: `Bearer ${token}` 
       }
    });
  };
 
 
 export const DeletePayment = async (paymentId) => {
-  const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+  const token = localStorage.getItem("userToken"); 
   const userId = localStorage.getItem("userId");
   
   if (!token) {
@@ -25,13 +25,13 @@ export const DeletePayment = async (paymentId) => {
 
   return await DeleteMethodExecutor(`https://localhost:7185/api/payment/${paymentId}?userId=${userId}`, {
     headers: {
-      Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+      Authorization: `Bearer ${token}` 
     }
   });
 };
 
 export const AddToPayment = async (paymentData) => {
-    const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+    const token = localStorage.getItem("userToken"); 
     const userId = localStorage.getItem("userId");
   
     if (!token) {
@@ -40,7 +40,7 @@ export const AddToPayment = async (paymentData) => {
   
     return await PostMethodWithTokenExecutor(`https://localhost:7185/api/payment?userId=${userId}`, paymentData, {
       headers: {
-        Authorization:  `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+        Authorization:  `Bearer ${token}` 
       }
     });
   };

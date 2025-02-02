@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {}
+    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {
+    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
         "projectName": "ACT.DataAccess",
-        "projectPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\eskoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eskoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
-                "projectPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj"
+              "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
+                "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj"
               }
             }
           }
@@ -79,21 +79,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
+    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
         "projectName": "ACT.Entity",
-        "projectPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
-        "packagesPath": "C:\\Users\\eskoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eskoc\\Documents\\Github\\Acente-proje\\ACT-Backend\\ACT.Entity\\obj\\",
+        "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
+        "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eskoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

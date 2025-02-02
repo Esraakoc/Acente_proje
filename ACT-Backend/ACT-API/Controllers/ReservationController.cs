@@ -46,7 +46,7 @@ namespace ACT_API.Controllers
                 PaymentId = reservation.PaymentId,
                 UpdateDate = reservation.UpdateDate,
 
-                // User bilgileri
+               
                 User = reservation.User == null ? null : new UserDto
                 {
                     UserId = reservation.UserId,
@@ -106,7 +106,6 @@ namespace ACT_API.Controllers
                 return Forbid("Token does not match the requested user.");
             }
 
-            // UserId'ye göre rezervasyonları al
             var reservations = await _reservationService.GetReservationsByUserIdAsync(userId);
 
             var reservationDtos = reservations.Select(reservation => new ReservationDto
@@ -261,51 +260,21 @@ namespace ACT_API.Controllers
             {
                 var newCart = await _reservationService.AddToReservation(reservationDto);
 
-                // Başarılı yanıt döndürülüyor
+              
                 return Ok(new { message = "Cart added successfully", cart = newCart });
             }
             catch (ArgumentException ex)
             {
-                // ArgumentException durumunda uygun bir yanıt döndür
+             
                 return BadRequest(ex.Message);
             }
             catch (Exception ex)
             {
-                // Genel hata durumunda 500 döndür
+              
                 Console.WriteLine($"An error occurred: {ex.Message}");
                 return StatusCode(500, $"An error occurred while processing your request: {ex.Message}");
             }
         }
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteReservation(int id, [FromQuery] string userId)
-        //{
-        //    if (!Request.Headers.ContainsKey("Authorization"))
-        //    {
-        //        return Unauthorized("Authorization header missing");
-        //    }
-        //    var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "").Trim();
-        //    if (string.IsNullOrEmpty(token) || !_tokenService.ValidateToken(token, out var userIdFromToken))
-        //    {
-        //        return Unauthorized("Invalid or missing token");
-        //    }
-        //    if (userId != userIdFromToken)
-        //    {
-        //        return Forbid("Token does not match the requested user.");
-        //    }
-
-        //    try
-        //    {
-        //        var result = await _reservationService.DeletetReservation(id);
-        //        if (!result)
-        //        {
-        //            return NotFound($"Payment with ID {id} not found.");
-        //        }
-        //        return NoContent(); // 204 No Content
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Internal server error: {ex.Message}");
-        //    }
-        //}
+       
     }
 }

@@ -3,14 +3,14 @@ const token = localStorage.getItem("userToken");
 const userId = localStorage.getItem("userId");
 
 export const GetReservationInfo = async () => {
-    const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+    const token = localStorage.getItem("userToken"); 
     const userId = localStorage.getItem("userId");
     if (!token) {
       throw new Error("Token bulunamadı"); 
     }
     return await GetMethodExecutor(`https://localhost:7185/api/reservation?userId=${userId}`,{
       headers: {
-        Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+        Authorization: `Bearer ${token}` 
       }
    }); 
  };
@@ -42,7 +42,7 @@ export const GetReservationInfo = async () => {
  }
 
 export const DeleteReservation = async (reservationId) => {
-  const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+  const token = localStorage.getItem("userToken"); 
   const userId = localStorage.getItem("userId");
   
   if (!token) {
@@ -51,13 +51,13 @@ export const DeleteReservation = async (reservationId) => {
 
   return await DeleteMethodExecutor(`https://localhost:7185/api/reservation/${reservationId}?userId=${userId}`, {
     headers: {
-      Authorization: `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+      Authorization: `Bearer ${token}` 
     }
   });
 };
 
 export const AddToReservation = async (reservationData) => {
-    const token = localStorage.getItem("userToken"); // Token'ı localStorage'dan al
+    const token = localStorage.getItem("userToken"); 
     const userId = localStorage.getItem("userId");
   
     if (!token) {
@@ -66,7 +66,7 @@ export const AddToReservation = async (reservationData) => {
   
     return await PostMethodWithTokenExecutor(`https://localhost:7185/api/reservation?userId=${userId}`, reservationData, {
       headers: {
-        Authorization:  `Bearer ${token}` // Header'a Bearer formatında token ekleyin
+        Authorization:  `Bearer ${token}` 
       }
     });
   };

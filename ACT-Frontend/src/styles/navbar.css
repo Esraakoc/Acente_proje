@@ -5,9 +5,9 @@
 
 .navbarDiv {
     background-color: white !important;
-    width: 100%; /* Tam genişlik */
-    box-shadow: none !important; /* BoxShadow'u kaldır */
-    z-index: 1100; /* Navbar'ın üstte kalmasını sağla */
+    width: 100%; 
+    box-shadow: none !important; 
+    z-index: 1100; 
     border-bottom: 1px solid rgb(207, 207, 207);
 }
 

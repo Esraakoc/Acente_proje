@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getUserByIdInfoAction, getUserInfoAction } from "./store/Redux/UserStore/UserAction";
+import { useDispatch } from "react-redux";
+import {  getUserInfoAction } from "./store/Redux/UserStore/UserAction";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/Navbar.jsx"
 import Sidebar from "./components/Sidebar.jsx"
 import SearchFlight from "./components/SearchFlight.jsx";
-import Reservations from "./components/Reservations.jsx";
 import Campaigns from "./components/Campaigns.jsx";
 import FlightSearchResult from "./components/FlightSearchResult.jsx";
 import CampaignDetail from "./components/CampaignDetail .jsx";
@@ -32,9 +31,9 @@ function App () {
     const token = localStorage.getItem("userToken");
 
     if (token) {
-      // Kullanıcı bilgilerini al ve Redux'a kaydet
+
       dispatch(getUserInfoAction()).catch(() => {
-        localStorage.removeItem("userToken"); // Hata durumunda token'ı temizle
+        localStorage.removeItem("userToken"); 
       });
     }
   }, [dispatch]);
@@ -48,11 +47,7 @@ function App () {
         {!isLoginRoute && <Sidebar />}
         <div  className="content">
         <Routes>
-        
-            {/* Giriş Sayfası */}
             <Route path="/login" element={<Login />} />
-
-            {/* Korumalı Rotalar */}
             <Route
               path="/"
               element={
@@ -69,14 +64,6 @@ function App () {
                 </ProtectedRoute>
               }
             />
-             {/* <Route
-              path="/reservations"
-              element={
-                <ProtectedRoute>
-                  <Reservations />
-                </ProtectedRoute>
-              }
-            /> */}
              <Route
               path="/campaigns"
               element={

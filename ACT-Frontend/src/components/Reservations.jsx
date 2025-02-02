@@ -46,7 +46,6 @@ const Reservations = () => {
 
   return (
     <Box p={10} sx={{marginLeft:"80px"}}>
-      {/* Uçak Bileti Ara */}
       <Box mb={4} p={3} border="1px solid #ddd" borderRadius={2} bgcolor="#fff">
         <Typography variant="h5" gutterBottom>
           Uçak Bileti Ara
@@ -114,7 +113,6 @@ const Reservations = () => {
        
       </Box>
 
-      {/* Kampanyalar */}
       <Typography variant="h5" gutterBottom>
         Kampanyalar
       </Typography>
@@ -156,7 +154,6 @@ const Reservations = () => {
           ))}
         </Box>
 
-        {/* Yurt Dışı En Ucuz Biletler */}
         <Box sx={{ flex: 1 }}>
           <Typography variant="h6" gutterBottom>
             Yurt Dışı En Ucuz Uçak Biletleri

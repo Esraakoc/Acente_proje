@@ -103,7 +103,6 @@ const SearchFlight = () => {
     width:"100%",
     zIndex:"1",
    }}/>
-      {/* Uçak Bileti Ara */}
       <Box mb={4} p={5} border="1px solid #ddd" borderRadius={3} bgcolor="#fff" sx={{position:"absolute",top:"10vw",left:"24vw", zIndex:"2"}}>
         <Typography  variant="h5" gutterBottom >
           Uçak Bileti Ara
@@ -171,7 +170,6 @@ const SearchFlight = () => {
       </Box>
     </div>
       
-      {/* Kampanyalar */}
       <Typography variant="h5" gutterBottom sx={{fontWeight:"bold",marginLeft:"5%"}}>
         Kampanyalar
       </Typography>
@@ -222,7 +220,6 @@ const SearchFlight = () => {
           ))}
         </Box>
 
-        {/* Yurt Dışı En Ucuz Biletler */}
         <Box sx={{ flex: 1 }}>
           <Typography variant="h6" gutterBottom sx={{margin:"revert"}}>
             Yurt Dışı En Ucuz Uçak Biletleri

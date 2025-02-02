@@ -59,7 +59,6 @@ const Campaigns = () => {
       </Typography> 
       <Card
         sx={{
-          // Sabit kart yüksekliği
           marginLeft:"5.5vw",
           marginBottom:"2vw",
           height:"250px",
@@ -89,7 +88,7 @@ const Campaigns = () => {
           <Box
             key={campaign.campaignId}
             sx={{
-              width: "calc(28.33% - 16px)", // Her kartın genişliği
+              width: "calc(28.33% - 16px)", 
               margin: "8px",
               boxSizing: "border-box",
             }}

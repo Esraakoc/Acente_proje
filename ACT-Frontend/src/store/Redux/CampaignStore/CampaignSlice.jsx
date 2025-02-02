@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  campaigns: [],           // Kampanya listesi
-  selectedCampaign: null,  // Seçili kampanya
+  campaigns: [],           
+  selectedCampaign: null, 
 };
 
 export const campaignSlice = createSlice({
@@ -10,10 +10,10 @@ export const campaignSlice = createSlice({
   initialState,
   reducers: {
     setCampaigns: (state, action) => {
-      state.campaigns = action.payload; // Kampanya listesini günceller
+      state.campaigns = action.payload; 
     },
     setSelectedCampaign: (state, action) => {
-      state.selectedCampaign = action.payload; // Seçili kampanyayı günceller
+      state.selectedCampaign = action.payload; 
     },
   },
 });

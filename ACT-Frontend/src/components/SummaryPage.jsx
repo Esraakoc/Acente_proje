@@ -25,14 +25,7 @@ const SummaryPage = () => {
         };
         fetchReservationDetails();
     }, [dispatch, reservationId]);
-// useEffect(()=>{
-//     if(reservationDetails?.flight?.airline === "THY"){
-//         setIsRed(true);
-//     }else{
-//         setIsRed(false);
-//     }
-// },[reservationDetails])
-   
+
     if (!reservationDetails) {
         return <div>Yükleniyor...</div>;
     }else{
@@ -42,12 +35,12 @@ const SummaryPage = () => {
         navigate("/")
     };
     const formatDateTime = (dateString) => {
-        const date = new Date(dateString); // ISO formatındaki tarihi Date objesine çevir
-        const formattedDate = date.toLocaleDateString('tr-TR'); // Tarihi yerel biçimde formatla
+        const date = new Date(dateString); 
+        const formattedDate = date.toLocaleDateString('tr-TR'); 
         const formattedTime = date.toLocaleTimeString('tr-TR', {
             hour: '2-digit',
             minute: '2-digit',
-        }); // Saati saat:dakika biçiminde formatla
+        }); 
     
         return `Tarih: ${formattedDate}  Saat: ${formattedTime}` ;
     };
@@ -58,25 +51,22 @@ const SummaryPage = () => {
             <Typography variant="h4" gutterBottom>
                 Rezervasyon Özeti
             </Typography>
-
-
-
             <div className="box">
-      <ul className="left">
-        {Array(25)
-          .fill(0)
-          .map((_, index) => (
-            <li key={index}></li>
-          ))}
-      </ul>
+            <ul className="left">
+              {Array(25)
+                .fill(0)
+                .map((_, index) => (
+                  <li key={index}></li>
+                ))}
+            </ul>
 
-      <ul className="right">
-        {Array(25)
-          .fill(0)
-          .map((_, index) => (
-            <li key={index}></li>
-          ))}
-      </ul>
+            <ul className="right">
+              {Array(25)
+                .fill(0)
+                .map((_, index) => (
+                  <li key={index}></li>
+                ))}
+            </ul>
 
       <div className={isRed ? "ticketRed": "ticket"}>
         <span className="airline airlineslip">{reservationDetails.flight.airline}</span>

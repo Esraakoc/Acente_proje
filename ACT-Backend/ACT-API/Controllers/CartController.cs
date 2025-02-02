@@ -45,7 +45,7 @@ namespace ACT_API.Controllers
                 Quantity = cart.Quantity,
                 AddedAt = cart.AddedAt,
 
-                // User bilgileri
+       
                 User = new UserDto
                 {
                     UserId = cart.User.UserId,
@@ -55,7 +55,7 @@ namespace ACT_API.Controllers
                     Phone = cart.User.Phone
                 },
 
-                // Flight bilgileri
+     
                 Flight = new FlightDto
                 {
                     FlightId = cart.Flight.FlightId,
@@ -100,7 +100,7 @@ namespace ACT_API.Controllers
                 return NotFound();
             }
 
-            // DTO'ya dönüştürme
+      
             var cartDtos = carts.Select(cart => new CartDto
             {
                 CartId = cart.CartId,
@@ -109,7 +109,7 @@ namespace ACT_API.Controllers
                 Quantity = cart.Quantity,
                 AddedAt = cart.AddedAt,
 
-                // User bilgileri
+             
                 User = cart.User != null ? new UserDto
                 {
                     UserId = cart.User.UserId,
@@ -119,7 +119,7 @@ namespace ACT_API.Controllers
                     Phone = cart.User.Phone
                 } : null,
 
-                // Flight bilgileri
+     
                 Flight = cart.Flight != null ? new FlightDto
                 {
                     FlightId = cart.Flight.FlightId,
@@ -157,11 +157,11 @@ namespace ACT_API.Controllers
             try
             {
                 await _cartService.DeleteCart(id);
-                return NoContent(); // Silme işlemi başarılıysa 204 No Content döner
+                return NoContent(); 
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message); // Hata durumunda 404 Not Found döner
+                return NotFound(ex.Message); 
             }
         }
         [HttpDelete("delete/{user}")]
@@ -186,11 +186,11 @@ namespace ACT_API.Controllers
             try
             {
                 await _cartService.DeleteUserCart(user);
-                return NoContent(); // Silme işlemi başarılıysa 204 No Content döner
+                return NoContent();
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message); // Hata durumunda 404 Not Found döner
+                return NotFound(ex.Message); 
             }
         }
         [HttpPost]
@@ -216,17 +216,17 @@ namespace ACT_API.Controllers
             {
                 var newCart = await _cartService.AddToCart(cartDto);
 
-                // Başarılı yanıt döndürülüyor
+          
                 return Ok(new { message = "Cart added successfully", cart = newCart });
             }
             catch (ArgumentException ex)
             {
-                // ArgumentException durumunda uygun bir yanıt döndür
+           
                 return BadRequest(ex.Message);
             }
             catch (Exception ex)
             {
-                // Genel hata durumunda 500 döndür
+      
                 Console.WriteLine($"An error occurred: {ex.Message}");
                 return StatusCode(500, $"An error occurred while processing your request: {ex.Message}");
             }

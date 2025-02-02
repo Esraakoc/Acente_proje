@@ -13,7 +13,7 @@ const CartPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const userId = localStorage.getItem("userId");
-  const [cartInfo, setCartInfo] = useState([]); // Birden fazla cart bilgisi için array olarak başlat
+  const [cartInfo, setCartInfo] = useState([]); 
 
   const handleClearCart = async(cartId) => {
     await dispatch(deleteCartAction(cartId));
@@ -31,19 +31,19 @@ const CartPage = () => {
     try {
       const response = await dispatch(getCartIdInfoAction(userId));
       console.log("Cart Info:", response.data);
-      setCartInfo(response.data); // API'den dönen tüm cart bilgilerini state'e set et
+      setCartInfo(response.data); 
     } catch (error) {
       console.error("Veriler alınırken hata oluştu:", error);
     }
   };
   
   useEffect(() => {
-    fetchData(); // İlk yüklemede verileri getir
+    fetchData(); 
   }, []);
   const formatDateTime = (dateString) => {
     const date = new Date(dateString);
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0"); // Ayları 0'dan başlatır, bu yüzden +1 eklenir
+    const month = String(date.getMonth() + 1).padStart(2, "0"); 
     const day = String(date.getDate()).padStart(2, "0");
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");

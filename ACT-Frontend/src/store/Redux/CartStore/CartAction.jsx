@@ -4,8 +4,6 @@ import { GetCartIdInfo, GetCartInfo, DeleteCart, AddToCart, DeleteUserCart } fro
 export const getCartIdInfoAction = (userId) => async () => {
     try {
         const response = await GetCartIdInfo(userId);
-        // Redux'a kullanıcı bilgilerini kaydet
-
         console.log(response.data);
         return response;
     } catch (error) {

@@ -30,13 +30,12 @@ namespace ACT.Business.Services
                 throw new UnauthorizedAccessException("User not found.");
             }
 
-            // Şifreyi doğrula
             if (!BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
             {
                 throw new UnauthorizedAccessException("Invalid password.");
             }
 
-            // Giriş başarılı, kullanıcıyı döndür
+     
             return user;
         }
     }

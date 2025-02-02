@@ -3,15 +3,14 @@ import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const ProtectedRoute = ({ children }) => {
-  const token = localStorage.getItem("userToken"); // LocalStorage'dan token kontrolü
-  const user = useSelector((state) => state.user.user); // Redux'tan kullanıcı bilgisi
+  const token = localStorage.getItem("userToken"); 
+  const user = useSelector((state) => state.user.user); 
 
   if (!token) {
-    // Token veya kullanıcı bilgisi yoksa login'e yönlendir
     return <Navigate to="/login" />;
   }
 
-  return children; // Token ve kullanıcı bilgisi varsa içeriği render et
+  return children; 
 };
 
 export default ProtectedRoute;

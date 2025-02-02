@@ -30,7 +30,7 @@ namespace ACT_API.Controllers
             return Ok(new
             {
                 Token = token,
-                ExpiresIn = 3600 * 24 // 24 saatlik geçerlilik
+                ExpiresIn = 3600 * 24
             });
         }
 

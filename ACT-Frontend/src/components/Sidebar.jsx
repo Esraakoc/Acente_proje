@@ -16,12 +16,12 @@ function Sidebar() {
       variant="permanent"
       anchor="left"
       sx={{
-        marginTop: '64px', // Navbar'ın yüksekliği kadar boşluk bırak
-        height: 'calc(100% - 64px)', // Aşağı kadar uzasın
+        marginTop: '64px', 
+        height: 'calc(100% - 64px)', 
         '& .MuiDrawer-paper': {
-          marginTop: '65px', // Drawer içeriği için boşluk
-          height: 'calc(100% - 64px)', // Drawer içeriği için tam yükseklik
-          boxSizing: 'border-box', // İç kenar boşlukları düzgün çalışsın
+          marginTop: '65px', 
+          height: 'calc(100% - 64px)', 
+          boxSizing: 'border-box', 
         },
       }}
     >

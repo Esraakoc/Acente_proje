@@ -24,11 +24,10 @@ namespace ACT.DataAccess.Repositories
         {
             var cart = await StatusAll(trackChanges: true)
                 .Where(c => c.UserId == userId)
-                .Include(c => c.User)  // User tablosunu dahil et
-                .Include(c => c.Flight) // Flight tablosunu dahil et
-                .ToListAsync(); //liste döndürür
-                //.FirstOrDefaultAsync(t => t.UserId == userId);
-
+                .Include(c => c.User)  
+                .Include(c => c.Flight) 
+                .ToListAsync(); 
+               
             if (cart == null)
             {
                 throw new Exception($"Cart with ID {userId} not found");
@@ -39,8 +38,8 @@ namespace ACT.DataAccess.Repositories
         public async Task<IEnumerable<ActCart>> GetCartAsync()
         {
             return await StatusAll(trackChanges: false)
-                .Include(c => c.User)  // User tablosunu dahil et
-                .Include(c => c.Flight) // Flight tablosunu dahil et
+                .Include(c => c.User) 
+                .Include(c => c.Flight) 
                 .ToListAsync();
         }
         public async Task DeleteCart(int cartId)
@@ -56,7 +55,7 @@ namespace ACT.DataAccess.Repositories
         }
         public async Task DeletUserCart(string user)
         {
-            // İlgili user değerine sahip tüm kayıtları getir
+      
             var carts = await _context.ActCarts.Where(c => c.UserId == user).ToListAsync();
 
             if (carts == null || !carts.Any())
@@ -64,10 +63,10 @@ namespace ACT.DataAccess.Repositories
                 throw new Exception($"Cart with User ID {user} not found");
             }
 
-            // Hepsini sil
+        
             _context.ActCarts.RemoveRange(carts);
 
-            // Değişiklikleri kaydet
+        
             await _context.SaveChangesAsync();
         }
 

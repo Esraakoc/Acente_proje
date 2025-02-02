@@ -6,7 +6,7 @@ import { getReservationByIdInfoAction } from "../store/Redux/ReservationStore/Re
 import "../styles/reservationDetail.css";
 
 const ReservationDetail = () => {
-  const { reservationId } = useParams(); // URL'den reservationId'yi al
+  const { reservationId } = useParams(); 
   const [reservation, setReservation] = useState(null);
   const [loading, setLoading] = useState(true);
 

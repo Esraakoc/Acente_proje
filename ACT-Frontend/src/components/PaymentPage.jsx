@@ -41,7 +41,7 @@ const PaymentPage = () => {
   });
 
   const dispatch =useDispatch();
-  const selectedFlight = useSelector((state) => state.cart.selectedFlight); // Redux
+  const selectedFlight = useSelector((state) => state.cart.selectedFlight); 
   const [isCustomerInfoSubmitted, setIsCustomerInfoSubmitted] = useState(false);
   const [isPaymentInfoSubmitted, setIsPaymentInfoSubmitted] = useState(true);
   const [saveCard, setSaveCard] = useState(false);
@@ -83,7 +83,6 @@ const PaymentPage = () => {
 
   const handleComplete = async () => {
     try {
-      // Öncelikle ödeme bilgilerini hazırlayın ve gönderin
       const paymentData = {
         firstName: customerInfo.firstName,
         lastName: customerInfo.lastName,
@@ -91,25 +90,23 @@ const PaymentPage = () => {
         creditCardNo: paymentInfo.creditCardNo,
         expiryDate: paymentInfo.expiryDate,
         cvv: paymentInfo.cvv,
-        paymentAmount: selectedFlight.price, // Fiyat TL işareti ile geliyorsa kaldır
+        paymentAmount: selectedFlight.price, 
         userId: localStorage.getItem("userId"),
       };
   
       const paymentResponse = await dispatch(addToPaymentAction(paymentData));
-  
-      // Ödeme başarılı olursa reservation bilgilerini hazırlayın
-      const paymentId = paymentResponse.data.payment.paymentId; // Payment ID'yi response'dan alın
-      const customerId = paymentResponse.data.payment.customerId; // Customer ID'yi response'dan alın
+
+      const paymentId = paymentResponse.data.payment.paymentId;
+      const customerId = paymentResponse.data.payment.customerId; 
   
       const reservationData = {
         userId: localStorage.getItem("userId"),
         customerId: customerId,
-        flightId: selectedFlight.flightId, // Redux'tan gelen seçili uçuş bilgisi
+        flightId: selectedFlight.flightId, 
         totalAmount: paymentData.paymentAmount,
         paymentId: paymentId,
       };
   
-      // Rezervasyon isteğini gönderin
       const reservationResponse = await dispatch(addToReservationAction(reservationData));
      
       const reservationId = reservationResponse.data.cart.reservationId;
@@ -147,9 +144,9 @@ const PaymentPage = () => {
     const departure = new Date(departureDate);
     const arrival = new Date(arrivalDate);
   
-    const durationMs = arrival - departure; // Farkı milisaniye olarak hesapla
-    const durationHours = Math.floor(durationMs / (1000 * 60 * 60)); // Milisaniyeden saat
-    const durationMinutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60)); // Kalan dakika
+    const durationMs = arrival - departure; 
+    const durationHours = Math.floor(durationMs / (1000 * 60 * 60)); 
+    const durationMinutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60)); 
     if(durationMinutes>0 && durationHours>0)
     { 
       return `${durationHours} saat ${durationMinutes} dakika`;
@@ -162,7 +159,6 @@ const PaymentPage = () => {
   };
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between", padding: "20px",marginTop:"60px" }}>
-      {/* Sol Taraf: Müşteri ve Ödeme Bilgileri */}
       <Box sx={{ flex: 3, marginRight: "20px" }}>
         <Typography variant="h4" gutterBottom sx={{display:"flex", justifyContent:"center"}}>
           Ödeme
@@ -175,7 +171,6 @@ const PaymentPage = () => {
                 </Step>
               ))}
         </Stepper>
-        {/* Müşteri Bilgileri */}
         
         <Card sx={{ ...cardStyle }}>
           {!isCustomerInfoSubmitted  ? (
@@ -268,7 +263,6 @@ const PaymentPage = () => {
           )}
         </Card>
 
-        {/* Ödeme Bilgileri */}
         <Card sx={{ ...cardStyle }}>
           {!isPaymentInfoSubmitted ? (
             <Box>

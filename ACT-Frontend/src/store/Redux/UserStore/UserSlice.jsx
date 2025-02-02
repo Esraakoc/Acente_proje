@@ -1,19 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  user: null, // Kullanıcı bilgisi başlangıçta boş
+  user: null, 
   
 };
 
 export const userSlice = createSlice({
   name: 'user',
-  initialState,
+  initialState, 
   reducers: {
     setUser: (state, action) => {
-      state.user = action.payload; // Kullanıcıyı günceller
+      state.user = action.payload; 
     },
     clearUser: (state) => {
-      state.user = null; // Kullanıcıyı temizler
+      state.user = null; 
     },
   },
 });
