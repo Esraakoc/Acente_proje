@@ -1,35 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esra\\AppData\\Local\\Temp\\Rar$DIa27088.10962.rartemp\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act-api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act.dataaccess\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12B827D3-0A17-4F4F-AD80-E1E7D1CDAB89}|ACT.DataAccess\\ACT.DataAccess.csproj|solutionrelative:act.dataaccess\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act.entity\\models\\actreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AF4F16F-1B72-4D61-98FE-07BB24061A77}|ACT.Entity\\ACT.Entity.csproj|solutionrelative:act.entity\\models\\actreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|c:\\users\\esra\\documents\\github\\acente_proje\\act-backend\\act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C436942-4BAB-472C-A52E-9BA25A028223}|ACT-API\\ACT-API.csproj|solutionrelative:act-api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -37,48 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ACT.DataAccess\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\AppDbContext.cs",
-              "RelativeToolTip": "ACT.DataAccess\\AppDbContext.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA8wCkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T15:07:52.8Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\ReservationRepository.cs",
-              "RelativeDocumentMoniker": "ACT.DataAccess\\Repositories\\ReservationRepository.cs",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\Repositories\\ReservationRepository.cs",
-              "RelativeToolTip": "ACT.DataAccess\\Repositories\\ReservationRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:37:24.951Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\AppData\\Local\\Temp\\Rar$DIa27088.10962.rartemp\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa27088.10962.rartemp\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Esra\\AppData\\Local\\Temp\\Rar$DIa27088.10962.rartemp\\AppDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa27088.10962.rartemp\\AppDbContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T19:28:20.259Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -94,54 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReservationController.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\Controllers\\ReservationController.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Controllers\\ReservationController.cs",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\Controllers\\ReservationController.cs",
-              "RelativeToolTip": "ACT-API\\Controllers\\ReservationController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAASwFAAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:44:00.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActReservation.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\Models\\ActReservation.cs",
-              "RelativeDocumentMoniker": "ACT.Entity\\Models\\ActReservation.cs",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\Models\\ActReservation.cs",
-              "RelativeToolTip": "ACT.Entity\\Models\\ActReservation.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwBgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T16:41:50.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "ACT-API\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "ACT-API\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T15:39:17.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\appsettings.json",
-              "RelativeDocumentMoniker": "ACT-API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\appsettings.json",
-              "RelativeToolTip": "ACT-API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-04T15:38:22.652Z"
             }
           ]
         }
