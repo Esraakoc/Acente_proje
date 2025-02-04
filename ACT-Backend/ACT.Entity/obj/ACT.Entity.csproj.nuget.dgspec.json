@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {}
+    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
+    "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
         "projectName": "ACT.Entity",
-        "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
+        "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj",
         "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\obj\\",
+        "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",

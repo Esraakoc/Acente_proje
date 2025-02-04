@@ -22,6 +22,7 @@ namespace ACT.Entity.Models
         public int? PaymentId { get; set; }
 
         public DateTime? UpdateDate { get; set; }
+        public string? Seat {  get; set; } 
 
 
         public virtual ActCustomer Customer { get; set; } = null!;

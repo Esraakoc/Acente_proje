@@ -38,7 +38,7 @@ namespace ACT.DataAccess
         {
             if(!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=10.132.102.130;Database=PROJECTDB;Trusted_Connection=True;TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-G55JK8H;Database=acente;Trusted_Connection=True;TrustServerCertificate=True;");
             }
         }
            
@@ -49,7 +49,7 @@ namespace ACT.DataAccess
         {
             modelBuilder.Entity<ActCampaign>(entity =>
             {
-                entity.HasKey(e => e.CampaignId).HasName("PK__ACT_Camp__5447BD4ED04ABE8B");
+                entity.HasKey(e => e.CampaignId).HasName("PK__ACT_Camp__5447BD4EE3C87B89");
 
                 entity.ToTable("ACT_Campaigns");
 
@@ -71,7 +71,7 @@ namespace ACT.DataAccess
 
             modelBuilder.Entity<ActCart>(entity =>
             {
-                entity.HasKey(e => e.CartId).HasName("PK__ACT_Cart__415B03B827236BAD");
+                entity.HasKey(e => e.CartId).HasName("PK__ACT_Cart__415B03B8A243F927");
 
                 entity.ToTable("ACT_Cart");
 
@@ -90,17 +90,17 @@ namespace ACT.DataAccess
                 entity.HasOne(d => d.Flight).WithMany(p => p.ActCarts)
                     .HasForeignKey(d => d.FlightId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Cart_Flights");
+                    .HasConstraintName("FK_ACT_Cart_Flight");
 
                 entity.HasOne(d => d.User).WithMany(p => p.ActCarts)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Cart_Users");
+                    .HasConstraintName("FK_ACT_Cart_User");
             });
 
             modelBuilder.Entity<ActCustomer>(entity =>
             {
-                entity.HasKey(e => e.CustomerId).HasName("PK__ACT_Cust__B611CB7D419502C8");
+                entity.HasKey(e => e.CustomerId).HasName("PK__ACT_Cust__B611CB7D0B9CC2AE");
 
                 entity.ToTable("ACT_Customers");
 
@@ -127,7 +127,7 @@ namespace ACT.DataAccess
 
             modelBuilder.Entity<ActFlight>(entity =>
             {
-                entity.HasKey(e => e.FlightId).HasName("PK__ACT_Flig__0E01864262F9785D");
+                entity.HasKey(e => e.FlightId).HasName("PK__ACT_Flig__0E018642B3E53CFB");
 
                 entity.ToTable("ACT_Flights");
 
@@ -165,7 +165,7 @@ namespace ACT.DataAccess
 
             modelBuilder.Entity<ActPayment>(entity =>
             {
-                entity.HasKey(e => e.PaymentId).HasName("PK__ACT_Paym__A0D9EFC6C061F3C7");
+                entity.HasKey(e => e.PaymentId).HasName("PK__ACT_Paym__A0D9EFC6979A82AD");
 
                 entity.ToTable("ACT_Payments");
 
@@ -195,24 +195,24 @@ namespace ACT.DataAccess
                 entity.HasOne(d => d.PaymentStatusNavigation).WithMany(p => p.ActPayments)
                     .HasForeignKey(d => d.PaymentStatus)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Payments_Status");
+                    .HasConstraintName("FK_ACT_Payments_PaymentStatus");
 
 
                 entity.HasOne(d => d.Customer).WithMany(p => p.ActPayments)
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ActPayment_Customer");
+                    .HasConstraintName("FK_ACT_Payments_Customer");
 
 
                 entity.HasOne(d => d.User).WithMany(p => p.ActPayments)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Payments_Users");
+                    .HasConstraintName("FK_ACT_Payments_User");
             });
 
             modelBuilder.Entity<ActPaymentStatus>(entity =>
             {
-                entity.HasKey(e => e.PaymentStatusId).HasName("PK__ACT_Paym__29CD0BBCD36ADABF");
+                entity.HasKey(e => e.PaymentStatusId).HasName("PK__ACT_Paym__D000CD8BD2AE75AA");
 
                 entity.ToTable("ACT_PaymentStatus");
 
@@ -224,7 +224,7 @@ namespace ACT.DataAccess
 
             modelBuilder.Entity<ActReservation>(entity =>
             {
-                entity.HasKey(e => e.ReservationId).HasName("PK__ACT_Rese__B14BF5C52204B3A5");
+                entity.HasKey(e => e.ReservationId).HasName("PK__ACT_Rese__B14BF5C5C1EA2F6D");
 
                 entity.ToTable("ACT_Reservations");
 
@@ -245,37 +245,40 @@ namespace ACT.DataAccess
                 entity.Property(e => e.UserId)
                     .HasMaxLength(15)
                     .HasColumnName("userId");
+                entity.Property(e => e.Seat)
+                   .HasMaxLength(5)
+                   .HasColumnName("seat");
 
                 entity.HasOne(d => d.Customer).WithMany(p => p.ActReservations)
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Reservations_Customers");
+                    .HasConstraintName("FK_ACT_Reservations_Customer");
 
                 entity.HasOne(e => e.Payment).WithMany(p => p.ActReservations)
                    .HasForeignKey(e => e.PaymentId)
                    .OnDelete(DeleteBehavior.ClientSetNull)
                    .HasConstraintName("FK_ACT_Reservations_Payment")
-                   .IsRequired(false); // Nullable Foreign Key
+                   .IsRequired(false); 
 
                 entity.HasOne(d => d.Flight).WithMany(p => p.ActReservations)
                     .HasForeignKey(d => d.FlightId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Reservations_Flights");
+                    .HasConstraintName("FK_ACT_Reservations_Flight");
 
                 entity.HasOne(d => d.StatusNavigation).WithMany(p => p.ActReservations)
                     .HasForeignKey(d => d.Status)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Reservations_Status");
+                    .HasConstraintName("FK_ACT_Reservations_Status");
 
                 entity.HasOne(d => d.User).WithMany(p => p.ActReservations)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Reservations_Users");
+                    .HasConstraintName("FK_ACT_Reservations_User");
             });
 
             modelBuilder.Entity<ActReservationStatus>(entity =>
             {
-                entity.HasKey(e => e.ReservationStatusId).HasName("PK__ACT_Rese__DA7A05F405CF297A");
+                entity.HasKey(e => e.ReservationStatusId).HasName("PK__ACT_Rese__C35187929E38B920");
 
                 entity.ToTable("ACT_ReservationStatus");
 
@@ -287,10 +290,10 @@ namespace ACT.DataAccess
 
             modelBuilder.Entity<ActUser>(entity =>
             {
-                entity.HasKey(e => e.UserId).HasName("PK__ACT_User__CB9A1CFF9AE9ADE2");
+                entity.HasKey(e => e.UserId).HasName("PK__ACT_User__CB9A1CFF525C5016");
 
                 entity.ToTable("ACT_Users");
-
+                 
                 entity.HasIndex(e => e.Email, "UQ__ACT_User__AB6E61648AAC061E").IsUnique();
 
                 entity.Property(e => e.UserId)

@@ -58,6 +58,7 @@ const Home = () => {
       setLoading(true);
       try {
         const response = await dispatch(GetReservationByUserIdAction());
+        console.log("response reser",response.data)
         const reservationData = response.data;
 
         const currentMonth = new Date().getMonth() + 1; 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eCKJ0TgDkMo=",
+  "dgSpecHash": "eij+dxegxaU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Esra\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Esra\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

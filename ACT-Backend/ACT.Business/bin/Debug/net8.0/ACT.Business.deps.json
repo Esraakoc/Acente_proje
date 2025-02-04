@@ -1205,7 +1205,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
-          "ACT.DataAccess.dll": {}
+          "ACT.DataAccess.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ACT.Entity/1.0.0": {
@@ -1214,7 +1217,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
-          "ACT.Entity.dll": {}
+          "ACT.Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

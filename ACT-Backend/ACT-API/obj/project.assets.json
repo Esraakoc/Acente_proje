@@ -7736,11 +7736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT-API\\ACT-API.csproj",
+      "projectUniqueName": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\ACT-API.csproj",
       "projectName": "ACT-API",
-      "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT-API\\ACT-API.csproj",
+      "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\ACT-API.csproj",
       "packagesPath": "C:\\Users\\Esra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT-API\\obj\\",
+      "outputPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Esra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7758,14 +7758,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Business\\ACT.Business.csproj": {
-              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Business\\ACT.Business.csproj"
+            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Business\\ACT.Business.csproj": {
+              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Business\\ACT.Business.csproj"
             },
-            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj"
+            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.DataAccess\\ACT.DataAccess.csproj"
             },
-            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
-              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\EsraKoç-202003011070-ACENTE-PROJESI\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj"
+            "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj": {
+              "projectPath": "C:\\Users\\Esra\\Documents\\GitHub\\Acente_proje\\ACT-Backend\\ACT.Entity\\ACT.Entity.csproj"
             }
           }
         }
